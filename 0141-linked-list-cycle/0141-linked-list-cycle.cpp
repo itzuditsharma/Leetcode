@@ -6,20 +6,21 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+//  Not a recommended solution 
+// Have time and space complexity 
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        ListNode* slow = head;
-        ListNode* fast = head;
+        unordered_map<ListNode*, int> mapp;
+        ListNode* temp = head;
 
-        if(head == NULL || head -> next == NULL) return false;
-
-        while(fast != NULL && fast->next != NULL){
-            slow = slow -> next;
-            fast = fast -> next -> next;
-
-
-            if(slow == fast) return true;
+        while(temp != NULL){
+            if(mapp.find(temp) != mapp.end()){
+                return true;
+            }
+            mapp[temp]++;
+            temp = temp -> next;
         }
         return false;
     }
