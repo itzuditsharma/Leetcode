@@ -12,9 +12,10 @@
 // Sorting list by doing merge sort 
 class Solution {
 public:
+    // Find middle node of  ll
     ListNode* findMiddle(ListNode* head){
         ListNode* slow = head;
-        ListNode* fast = head -> next;
+        ListNode* fast = head -> next;  //Just a little change to tortoise and hare 
 
         while(fast != NULL && fast -> next != NULL){
             slow = slow -> next;
@@ -23,6 +24,7 @@ public:
         return slow;
     } 
 
+    // Merge two sorted lists 
     ListNode* MergeTwoLists(ListNode* l1, ListNode* l2){
         ListNode* dummy_node = new ListNode(-1);
         ListNode* temp = dummy_node;
