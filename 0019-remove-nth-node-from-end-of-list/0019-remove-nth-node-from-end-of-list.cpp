@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
+        // Delete a single Node 
         if(head -> next == NULL && n==1) return nullptr;
         int count = 0;
         ListNode* temp = head;
@@ -19,7 +20,8 @@ public:
             count++;
             temp = temp -> next;
         }
-
+        
+        // Delete the first element 
         if(count == n){
             head = head -> next;
             return head;
@@ -33,6 +35,7 @@ public:
             count++;
             if(count == k){
                 temp -> next = temp -> next -> next;
+                break;
             }
             temp = temp -> next;
         }
