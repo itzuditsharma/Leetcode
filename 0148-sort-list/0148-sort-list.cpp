@@ -8,29 +8,56 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// Sorting list by doing merge sort 
 class Solution {
 public:
+    ListNode* findMiddle(ListNode* head){
+        ListNode* slow = head;
+        ListNode* fast = head -> next;
+
+        while(fast != NULL && fast -> next != NULL){
+            slow = slow -> next;
+            fast = fast -> next -> next;
+        }
+        return slow;
+    } 
+
+    ListNode* MergeTwoLists(ListNode* l1, ListNode* l2){
+        ListNode* dummy_node = new ListNode(-1);
+        ListNode* temp = dummy_node;
+
+        while(l1!= NULL && l2 != NULL){
+            if(l1 -> val < l2 -> val){
+                temp -> next = l1;
+                temp = l1;
+                l1 = l1 -> next;
+            }else{
+                temp -> next = l2;
+                temp = l2;
+                l2 = l2 -> next;
+            }
+        }
+
+        if(l1 != NULL) temp ->next = l1;
+        if(l2 != NULL) temp ->next = l2;
+
+        return dummy_node -> next;
+    }
+
     ListNode* sortList(ListNode* head) {
-        vector<int> arr;
-        ListNode* temp = head;
-
-        if(head == NULL) return NULL;
-        if(head -> next == NULL) return head;
-
-        while(temp!= NULL){
-            arr.push_back(temp->val);
-            temp = temp -> next;
+        if(head == NULL || head -> next == NULL){
+            return head;
         }
 
-        sort(arr.begin(), arr.end());
+        ListNode* middle = findMiddle(head);
+        ListNode * left = head;
+        ListNode* right = middle-> next;
+        middle -> next = NULL;
 
-        temp = head;
-        int i = 0;
-        while(temp != NULL){
-            temp -> val = arr[i];
-            i++;
-            temp = temp -> next;
-        }
-        return head;
+        left = sortList(left);    
+        right = sortList(right);    
+
+        return MergeTwoLists(left, right);
     }
 };
