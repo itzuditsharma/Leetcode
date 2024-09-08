@@ -8,23 +8,41 @@
  */
 class Solution {
 public:
-    ListNode *getIntersectionNode(ListNode *head1, ListNode *head2) {
-       
-        map<ListNode* , int> mapp;
-        ListNode* temp1 = head1;
-
-        while(temp1 != NULL){
-            mapp[temp1]++;
-            temp1 = temp1->next;
+    ListNode* collisionPoint(ListNode *t1, ListNode *t2, int diff){
+        while(diff){
+            t2 = t2 -> next;
+            diff--;
         }
 
-        ListNode* temp2 = head2;
-        while(temp2 != NULL){
-            if(mapp.find(temp2)!= mapp.end()){
-                return temp2;
-            }
-            temp2 = temp2->next;
+        while(t1 != t2){
+            t1 = t1 -> next;
+            t2 = t2 -> next;
         }
-        return NULL;
+        return t1;
+    }
+
+    // using 2 pointers to avoid space complexity 
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode* t1 = headA;
+        ListNode* t2 = headB;
+
+        int count1 = 0;
+        int count2 = 0;
+
+        while(t1!=NULL){
+            count1++;
+            t1 = t1 -> next;
+        }
+
+        while(t2 != NULL){
+            count2++;
+            t2 = t2 -> next;
+        }
+
+        if(count1 < count2){
+            return collisionPoint(headA, headB, (count2-count1));
+        }else{
+            return collisionPoint(headB, headA, (count1-count2));
+        }
     }
 };
