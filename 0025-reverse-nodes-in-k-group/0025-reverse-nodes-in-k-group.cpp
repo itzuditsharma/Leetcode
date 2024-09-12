@@ -25,7 +25,7 @@ public:
 
     ListNode* getKthNode(ListNode* temp,int k){
         k--;
-        while(k > 0){
+        while(temp != NULL && k > 0){
             k--;
             temp = temp -> next;
         }
