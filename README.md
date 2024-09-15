@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/itzuditsharma/Leetcode/tree/master/0050-powx-n) |
 | [0203-remove-linked-list-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0203-remove-linked-list-elements) |
 | [0234-palindrome-linked-list](https://github.com/itzuditsharma/Leetcode/tree/master/0234-palindrome-linked-list) |
+| [2050-count-good-numbers](https://github.com/itzuditsharma/Leetcode/tree/master/2050-count-good-numbers) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -75,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/itzuditsharma/Leetcode/tree/master/0002-add-two-numbers) |
 | [0050-powx-n](https://github.com/itzuditsharma/Leetcode/tree/master/0050-powx-n) |
+| [2050-count-good-numbers](https://github.com/itzuditsharma/Leetcode/tree/master/2050-count-good-numbers) |
 ## String
 |  |
 | ------- |
