@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/itzuditsharma/Leetcode/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/itzuditsharma/Leetcode/tree/master/0031-next-permutation) |
 | [0039-combination-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0075-sort-colors](https://github.com/itzuditsharma/Leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/itzuditsharma/Leetcode/tree/master/0078-subsets) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/itzuditsharma/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -97,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0078-subsets](https://github.com/itzuditsharma/Leetcode/tree/master/0078-subsets) |
 ## Bit Manipulation
 |  |
