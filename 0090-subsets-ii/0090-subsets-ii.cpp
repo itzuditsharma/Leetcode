@@ -1,22 +1,24 @@
 class Solution {
 public:
-    void recur(int ind,vector<int>& nums, vector<int>& ds, vector<vector<int>> &ans){
+
+    void recur(int ind, vector<int>& arr, vector<int>&ds, vector<vector<int>> &ans){
         ans.push_back(ds);
 
-        for(int i = ind; i < nums.size(); i++){
-            if(i != ind && nums[i] == nums[i-1]) continue;
-            ds.push_back(nums[i]);
-            recur(i + 1, nums, ds, ans);
+        for(int i = ind; i < arr.size(); i++){
+            if(i != ind && arr[i] == arr[i-1]) continue;
+            ds.push_back(arr[i]);
+            recur(i+1, arr, ds, ans);
             ds.pop_back();
         }
+
     }
 
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        vector<int> ds;
+        vector<int>ds;
         vector<vector<int>> ans;
+        int i = 0;
         sort(nums.begin(), nums.end());
-        recur(0, nums, ds, ans);
+        recur(i, nums, ds, ans);
         return ans;
-
     }
 };
