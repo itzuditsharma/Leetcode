@@ -15,7 +15,7 @@ public:
     }
 
     vector<string> letterCombinations(string digits) {
-        
+        if(digits.empty()) return {}; 
         unordered_map<char, string> mapp;
         mapp['2'] = "abc";
         mapp['3'] = "def";
@@ -27,7 +27,6 @@ public:
         mapp['9'] = "wxyz";
 
         vector<string> ans;
-        if(digits == "") return ans;
         recur(0,"", digits, mapp, ans);
         return ans;      
     }
