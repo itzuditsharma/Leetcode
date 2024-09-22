@@ -9,11 +9,15 @@ public:
 
 
         if(open < n){
-            recur(st+'(', open+1, closed, n , ans);
+            st.push_back('(');
+            recur(st, open+1, closed, n , ans);
+            st.pop_back();
         }
 
         if(closed < open){
-            recur(st+')', open, closed+1, n, ans);
+            st.push_back(')');
+            recur(st, open, closed+1, n, ans);
+            st.pop_back();
         }
     }
 
