@@ -1,29 +1,28 @@
 class Solution {
 public:
 
-    void recur(string st, int open, int closed, int n, vector<string> &ans){
+    void recur(int n, string temp, int open, int closed, vector<string>&ans){
         if(open == n && closed == n){
-            ans.push_back(st);
+            ans.push_back(temp);
             return;
         }
 
-
         if(open < n){
-            st.push_back('(');
-            recur(st, open+1, closed, n , ans);
-            st.pop_back();
+            temp.push_back('(');
+            recur(n, temp, open+1, closed, ans);
+            temp.pop_back();
         }
 
-        if(closed < open){
-            st.push_back(')');
-            recur(st, open, closed+1, n, ans);
-            st.pop_back();
+        if(open > closed){
+            temp.push_back(')');
+            recur(n, temp, open, closed+1, ans);
+            temp.pop_back();
         }
     }
 
     vector<string> generateParenthesis(int n) {
         vector<string> ans;
-        recur("", 0, 0, n, ans);
+        recur(n, "",0,0, ans);
         return ans;
     }
 };
