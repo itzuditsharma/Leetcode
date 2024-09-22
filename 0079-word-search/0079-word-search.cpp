@@ -7,17 +7,16 @@ public:
         if(currChar != word[currIndex]) return false;
         if(currIndex == word.size() - 1) return true;
 
-        int count = 0;
         board[i][j] = '$';
 
-        count += recur(board, word, i-1, j, currIndex+1);
-        count += recur(board, word, i+1, j, currIndex+1);
-        count += recur(board, word, i, j-1, currIndex+1);
-        count += recur(board, word, i, j+1, currIndex+1);
+        bool found = recur(board, word, i - 1, j, currIndex + 1) ||
+                 recur(board, word, i + 1, j, currIndex + 1) ||
+                 recur(board, word, i, j - 1, currIndex + 1) ||
+                 recur(board, word, i, j + 1, currIndex + 1);
 
         board[i][j] = currChar;
 
-        return count;
+        return found;
     }
 
     bool exist(vector<vector<char>>& board, string word) {
@@ -27,10 +26,9 @@ public:
 
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
-                count += recur(board, word, i, j, 0);
-                if(count == 1) break;
+                if(recur(board, word, i, j, 0)) return true;
             }
         }
-        return count;
+        return false;
     }
 };
