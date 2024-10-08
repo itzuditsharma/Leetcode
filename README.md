@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/itzuditsharma/Leetcode/tree/master/0136-single-number) |
 | [0204-count-primes](https://github.com/itzuditsharma/Leetcode/tree/master/0204-count-primes) |
 | [0216-combination-sum-iii](https://github.com/itzuditsharma/Leetcode/tree/master/0216-combination-sum-iii) |
+| [1056-capacity-to-ship-packages-within-d-days](https://github.com/itzuditsharma/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/itzuditsharma/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 ## Hash Table
 |  |
@@ -169,5 +170,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [1056-capacity-to-ship-packages-within-d-days](https://github.com/itzuditsharma/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/itzuditsharma/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 <!---LeetCode Topics End-->
