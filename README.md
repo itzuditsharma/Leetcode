@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/itzuditsharma/Leetcode/tree/master/0216-combination-sum-iii) |
 | [0496-next-greater-element-i](https://github.com/itzuditsharma/Leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0503-next-greater-element-ii) |
+| [0735-asteroid-collision](https://github.com/itzuditsharma/Leetcode/tree/master/0735-asteroid-collision) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/itzuditsharma/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/itzuditsharma/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 ## Hash Table
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/itzuditsharma/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0496-next-greater-element-i](https://github.com/itzuditsharma/Leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0503-next-greater-element-ii) |
+| [0735-asteroid-collision](https://github.com/itzuditsharma/Leetcode/tree/master/0735-asteroid-collision) |
 ## Recursion
 |  |
 | ------- |
@@ -187,4 +189,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/itzuditsharma/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0496-next-greater-element-i](https://github.com/itzuditsharma/Leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0503-next-greater-element-ii) |
+## Simulation
+|  |
+| ------- |
+| [0735-asteroid-collision](https://github.com/itzuditsharma/Leetcode/tree/master/0735-asteroid-collision) |
 <!---LeetCode Topics End-->
