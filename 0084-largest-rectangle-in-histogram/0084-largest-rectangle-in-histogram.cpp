@@ -8,10 +8,10 @@ public:
             while(!st.empty() && nums[st.top()] > nums[i]){
                 int element = nums[st.top()];
                 st.pop();
-                int pse = (st.empty())? -1 : st.top();
-                int nse = i;
+                int pse = (st.empty()) ? -1 : st.top();
+                int nse =i;
 
-                maxx = max(maxx, element *(nse - pse - 1));
+                maxx = max(maxx, element * (nse - pse - 1));
             }
             st.push(i);
         }
@@ -19,8 +19,8 @@ public:
         while(!st.empty()){
             int element = nums[st.top()];
             st.pop();
+            int pse = (st.empty()) ? -1 : st.top();
             int nse = nums.size();
-            int pse = (st.empty())? -1 : st.top();
 
             maxx = max(maxx, element * (nse - pse - 1));
         }
