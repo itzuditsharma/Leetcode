@@ -1,16 +1,17 @@
 class Solution {
 public:
-    int largestRectangleArea(vector<int> &nums){
+    int largestRectangleArea(vector<int>& nums) {
         stack<int> st;
         int maxx = 0;
-        for(int i = 0; i < nums.size(); i++){
+
+        for(int i = 0;i < nums.size(); i++){
             while(!st.empty() && nums[st.top()] > nums[i]){
                 int element = nums[st.top()];
                 st.pop();
                 int pse = (st.empty()) ? -1 : st.top();
-                int nse = i;
+                int nse =i;
 
-                maxx = max(maxx, element *(nse - pse - 1));
+                maxx = max(maxx, element * (nse - pse - 1));
             }
             st.push(i);
         }
@@ -20,29 +21,26 @@ public:
             st.pop();
             int pse = (st.empty()) ? -1 : st.top();
             int nse = nums.size();
-            maxx = max(maxx, element *(nse - pse - 1));
+
+            maxx = max(maxx, element * (nse - pse - 1));
         }
         return maxx;
     }
 
     int maximalRectangle(vector<vector<char>>& matrix) {
-        int maxx = 0;
         int n = matrix.size();
         int m = matrix[0].size();
         vector<vector<int>> presum(n, vector<int>(m, 0));
-
         for(int j = 0; j < m; j++){
             int sum = 0;
             for(int i = 0; i < n; i++){
-                if(matrix[i][j] == '1'){
-                    sum += 1;
-                }else{
-                    sum = 0;
-                }
+                if(matrix[i][j] == '1') sum+=1;
+                else sum = 0;
+
                 presum[i][j] = sum;
             }
         }
-
+        int maxx = 0;
         for(int i = 0; i < n; i++){
             maxx = max(maxx, largestRectangleArea(presum[i]));
         }
