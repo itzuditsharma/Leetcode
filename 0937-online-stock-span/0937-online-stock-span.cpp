@@ -6,11 +6,12 @@ public:
     }
     
     int next(int price) {
-        int ans  = 1;
+        int ans = 1;
         while(!st.empty() && st.top().first <= price){
             auto x = st.top();
             st.pop();
             ans += x.second;
+
         }
         st.push({price, ans});
         return ans;
