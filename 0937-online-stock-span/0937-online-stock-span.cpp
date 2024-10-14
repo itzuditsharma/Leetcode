@@ -11,7 +11,6 @@ public:
             auto x = st.top();
             st.pop();
             ans += x.second;
-
         }
         st.push({price, ans});
         return ans;
