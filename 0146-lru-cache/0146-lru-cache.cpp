@@ -1,10 +1,9 @@
 class LRUCache {
 public:
-
     class Node{
         public:
-            int val;
             int key;
+            int val;
             Node* prev;
             Node* next;
 
@@ -22,8 +21,8 @@ public:
 
     LRUCache(int capacity) {
         cap = capacity;
-        head->next = tail;
-        tail->prev = head;
+        head -> next = tail;
+        tail -> prev = head;
     }
 
     void addNode(Node* new_node){
@@ -44,31 +43,30 @@ public:
     }
     
     int get(int key) {
-        if(mapp.find(key) != mapp.end()){
+        if(mapp.find(key)!=mapp.end()){
             Node* resNode = mapp[key];
             int ans = resNode -> val;
             mapp.erase(key);
+
             deleteNode(resNode);
             addNode(resNode);
             mapp[key] = head -> next;
-
             return ans;
-        } 
+        }
+
         return -1;
     }
     
     void put(int key, int value) {
-        if(mapp.find(key) != mapp.end()){
+        if(mapp.find(key)!=mapp.end()){
             Node* existingNode = mapp[key];
             deleteNode(existingNode);
             mapp.erase(key);
         }
-
         if(mapp.size() == cap){
-            mapp.erase(tail -> prev->key);
+            mapp.erase(tail -> prev -> key);
             deleteNode(tail -> prev);
         }
-
         addNode(new Node(key, value));
         mapp[key] = head -> next;
     }
