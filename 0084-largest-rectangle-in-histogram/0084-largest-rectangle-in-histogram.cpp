@@ -1,28 +1,52 @@
 class Solution {
 public:
-    int largestRectangleArea(vector<int>& nums) {
+    vector<int> NSL(vector<int> &nums){
+        vector<int> ans(nums.size());
         stack<int> st;
-        int maxx = 0;
 
-        for(int i = 0;i < nums.size(); i++){
-            while(!st.empty() && nums[st.top()] > nums[i]){
-                int element = nums[st.top()];
+        for(int i = 0; i < nums.size(); i++){
+            while(!st.empty() && nums[st.top()] >= nums[i]){
                 st.pop();
-                int pse = (st.empty()) ? -1 : st.top();
-                int nse =i;
+            }
 
-                maxx = max(maxx, element * (nse - pse - 1));
+            if(st.empty()){
+                ans[i] = -1;
+            }else{
+                ans[i] = st.top();
             }
             st.push(i);
         }
+        return ans;
+    }
 
-        while(!st.empty()){
-            int element = nums[st.top()];
-            st.pop();
-            int pse = (st.empty()) ? -1 : st.top();
-            int nse = nums.size();
+    vector<int> NSR(vector<int> &nums){
+        vector<int> ans(nums.size());
+        stack<int> st;
 
-            maxx = max(maxx, element * (nse - pse - 1));
+        for(int i = nums.size() - 1;i >=0; i--){
+            while(!st.empty() && nums[st.top()] >= nums[i]){
+                st.pop();
+            }
+
+            if(st.empty()){
+                ans[i] = nums.size();
+            }else{
+                ans[i] = st.top();
+            }
+            st.push(i);
+        }
+        return ans;
+    }
+
+    int largestRectangleArea(vector<int>& heights) {
+        vector<int> nsl = NSL(heights);
+        vector<int> nsr = NSR(heights);
+
+        int maxx = 0;
+        for(int i = 0; i < heights.size(); i++){
+            int l = nsl[i];
+            int r = nsr[i];
+            maxx = max(maxx, heights[i] * (r-l-1));
         }
         return maxx;
     }
