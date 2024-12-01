@@ -1,20 +1,13 @@
 class Solution {
 public:
-    // Not the most optimal one
     int numberOfSubstrings(string s) {
-        int l = 0;
-        int r = 0;
-        int hash[3] = {0};
+        int last_seen[3] = {-1, -1, -1};
         int count = 0;
-        int n = s.size();
-        while(r < n){
-            hash[s[r]-'a']++;
-            while(hash[0] >=1 && hash[1] >=1 && hash[2] >= 1){
-                count += (n - r);
-                hash[s[l] - 'a']--;
-                l++;
+        for(int i = 0; i < s.size(); i++){
+            last_seen[s[i] - 'a'] = i;
+            if(last_seen[0] != -1 && last_seen[1] != -1 && last_seen[2] != -1){
+                count += (1 + min({last_seen[0], last_seen[1], last_seen[2]}));
             }
-            r++;
         }
         return count;
     }
