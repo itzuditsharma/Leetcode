@@ -4,7 +4,7 @@ public:
         int maxind = 0;
         for(int i = 0; i < nums.size(); i++){
             if(i > maxind) return false;
-            maxind = max(maxind, i+nums[i]);
+            maxind = max(maxind, i + nums[i]);
         }
         return true;
     }
