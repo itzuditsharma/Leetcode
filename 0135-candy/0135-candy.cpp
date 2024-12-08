@@ -1,33 +1,33 @@
 class Solution {
 public:
-    // Slope method - Most optimal
     int candy(vector<int>& ratings) {
-        int i = 1;
         int n = ratings.size();
-        int sum = 1;
-        while(i < n){
-            if(ratings[i] == ratings[i-1]){
-                sum += 1;
-                i++;
-                continue;
+        int left[n];
+        int right[n];
+        left[0] = 1;
+        right[n-1] = 1;
+
+        for(int i = 1; i < n; i++){
+            if(ratings[i] > ratings[i-1]){
+                left[i] = left[i-1] + 1;
+            }else{
+                left[i] = 1;
             }
-            int peak = 1;
-            while(i < n && ratings[i] > ratings[i-1]){
-                peak += 1;
-                sum += peak;
-                i++; 
+        }
+        int rit = 1;
+        int curr = 1;
+        int sum = max(1, left[n-1]);
+
+        for(int i = n-2; i >=0; i--){
+            if(ratings[i] > ratings[i+1]){
+                curr = rit + 1;
+                rit = curr;
+            }else{
+                curr = 1;
+                rit = curr;
             }
 
-            int down = 1;
-            while(i < n && ratings[i] < ratings[i-1]){
-                sum += down;
-                down++;
-                i++;
-            }
-
-            if(down > peak){
-                sum += (down - peak);
-            }  
+            sum  += max(left[i] , curr);
         }
         return sum;
     }
