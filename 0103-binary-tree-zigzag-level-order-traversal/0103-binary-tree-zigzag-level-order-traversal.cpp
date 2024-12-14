@@ -16,10 +16,12 @@ public:
         if(root == NULL) return ans;
         queue<TreeNode*> q;
         q.push(root);
-        int flag = 0; //l to r
+        int flag = 0;
+
         while(!q.empty()){
             vector<int> level;
             int size = q.size();
+
             for(int i = 0; i < size; i++){
                 TreeNode* node = q.front();
                 q.pop();
