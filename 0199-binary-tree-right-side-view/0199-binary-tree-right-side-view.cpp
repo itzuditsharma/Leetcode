@@ -11,31 +11,20 @@
  */
 class Solution {
 public:
-    vector<int> rightSideView(TreeNode* root) {
-        queue<TreeNode*> q;
-        vector<int> ans;
-        if(root == NULL) return ans;
-        int lastval;
+    void helper(TreeNode* root, int level, vector<int> &res){
+        if(root == NULL) return;
 
-        q.push(root);
-        q.push(NULL);
-
-        while(!q.empty()){
-            TreeNode* node = q.front();
-            q.pop();
-
-            if(node!=NULL){
-                lastval = node -> val;
-                if(node -> left) q.push(node -> left);
-                if(node -> right) q.push(node -> right);
-            }else{
-                ans.push_back(lastval);
-
-                if(!q.empty()){
-                    q.push(NULL);
-                }
-            }
+        if(res.size()==level){
+            res.push_back(root->val);
         }
-        return ans;
+
+        helper(root->right, level +1, res);
+        helper(root->left, level +1, res);
+    }
+
+    vector<int> rightSideView(TreeNode* root) {
+        vector<int> res;
+        helper(root, 0, res);
+        return res;
     }
 };
