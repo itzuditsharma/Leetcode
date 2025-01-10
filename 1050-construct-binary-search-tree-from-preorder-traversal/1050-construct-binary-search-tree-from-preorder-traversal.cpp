@@ -23,7 +23,7 @@ public:
     }
 
     TreeNode* bstFromPreorder(vector<int>& preorder) {
-        int i = 0;
+        int i  = 0;
         return helper(preorder, i, INT_MAX);
     }
 };
