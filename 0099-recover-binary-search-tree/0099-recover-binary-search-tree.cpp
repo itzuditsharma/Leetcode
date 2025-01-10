@@ -10,32 +10,38 @@
  * };
  */
 class Solution {
+private:
+    TreeNode* prev = NULL;
+    TreeNode* first = NULL;
+    TreeNode* middle = NULL;
+    TreeNode* last = NULL;
+
 public:
-    void inordertraversal(TreeNode* root, vector<int>& inorder){
+    void inorder(TreeNode* root){
         if(root == NULL) return;
 
-        inordertraversal(root -> left, inorder);
-        inorder.push_back(root -> val);
-        inordertraversal(root -> right, inorder);
-    }
+        inorder(root->left);
 
-    void helper(TreeNode* root, vector<int> &vec, int &i){
-        if(!root || i > vec.size()) return;
-
-        helper(root -> left, vec, i);
-        if(root -> val != vec[i]){
-            root-> val = vec[i];
+        if(prev != NULL && root -> val < prev -> val){
+            if(first == NULL){
+                first = prev;
+                middle = root;
+            }else{
+                last = root;
+            }
         }
-        i++;
-        helper(root -> right, vec, i);
-    }
 
+        prev = root;
+        inorder(root->right);
+    }
 
     void recoverTree(TreeNode* root) {
-        vector<int> inorder;
-        inordertraversal(root, inorder);
-        sort(inorder.begin(), inorder.end());
-        int i = 0;
-        helper(root, inorder, i);
+        first, middle, last = NULL;
+        prev = new TreeNode(INT_MIN);
+
+        inorder(root);
+
+        if(first && last) swap(first -> val, last -> val);
+        else if(first && middle) swap(first -> val , middle -> val);
     }
 };
