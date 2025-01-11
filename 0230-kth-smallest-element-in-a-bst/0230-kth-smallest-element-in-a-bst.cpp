@@ -11,13 +11,14 @@
  */
 class Solution {
 public:
+
     void helper(TreeNode* root, int k, int &k_smallest, int &counter){
         if(!root || counter >= k) return;
 
         helper(root -> left, k, k_smallest, counter);
         counter++;
         if(counter == k){
-            k_smallest = root->val;
+            k_smallest = root -> val;
             return;
         }
         helper(root -> right, k, k_smallest, counter);
