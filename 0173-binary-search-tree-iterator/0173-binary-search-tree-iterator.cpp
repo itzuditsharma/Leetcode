@@ -11,14 +11,14 @@
  */
 class BSTIterator {
 public:
-    stack<TreeNode* > st;
-
+    stack<TreeNode*> st;
     void pushAll(TreeNode* root){
         while(root){
             st.push(root);
             root = root -> left;
         }
     }
+
     BSTIterator(TreeNode* root) {
         pushAll(root);
     }
