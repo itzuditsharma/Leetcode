@@ -24,12 +24,13 @@ public:
             if(node == NULL){
                 s.append("#,");
             }else{
-                 s.append(to_string(node -> val) + ','); 
+                s.append(to_string(node -> val) + ',');
             }
             if(node != NULL){
                 q.push(node -> left);
                 q.push(node -> right);
-            }
+            } 
+
         }
         return s;
     }
@@ -38,30 +39,30 @@ public:
     TreeNode* deserialize(string data) {
         if(data.size() == 0) return NULL;
         stringstream ss(data);
-        string str;
-        getline(ss, str, ',');
-        TreeNode* root = new TreeNode(stoi(str));
-        queue<TreeNode*> q;
+        string s;
+        getline(ss, s, ',');
+        TreeNode* root = new TreeNode(stoi(s));
+        queue<TreeNode* >q;
         q.push(root);
 
         while(!q.empty()){
             TreeNode* node = q.front();
             q.pop();
 
-            getline(ss, str, ',');
-            if(str == "#"){
+            getline(ss, s, ',');
+            if(s == "#"){
                 node -> left = NULL;
             }else{
-                TreeNode* leftNode = new TreeNode(stoi(str));
+                TreeNode* leftNode = new TreeNode(stoi(s));
                 node -> left = leftNode;
                 q.push(leftNode);
             }
 
-            getline(ss, str, ',');
-            if(str == "#"){
+            getline(ss, s, ',');
+            if(s == "#"){
                 node -> right = NULL;
             }else{
-                TreeNode* rightNode = new TreeNode(stoi(str));
+                TreeNode* rightNode = new TreeNode(stoi(s));
                 node -> right = rightNode;
                 q.push(rightNode);
             }
