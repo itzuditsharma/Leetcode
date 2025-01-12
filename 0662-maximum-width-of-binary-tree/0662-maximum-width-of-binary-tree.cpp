@@ -13,9 +13,8 @@ class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
         queue<pair<TreeNode*, int>> q;
-        q.push({root, 0});  //node, index
+        q.push({root, 0});
         int maxwidth = 0;
-
 
         while(!q.empty()){
             int size = q.size();
@@ -28,8 +27,8 @@ public:
 
                 if(i == 0) first = cur_id;
                 if(i == size - 1) last = cur_id;
-                if(node -> left) q.push({node-> left, 2 * (long long)cur_id + 1});
-                if(node -> right) q.push({node-> right, 2 * (long long)cur_id + 2});
+                if(node -> left) q.push({node -> left, 2*(long long)cur_id+1});
+                if(node -> right) q.push({node -> right, 2*(long long)cur_id+2});
             }
             maxwidth = max(maxwidth, last - first + 1);
         }
