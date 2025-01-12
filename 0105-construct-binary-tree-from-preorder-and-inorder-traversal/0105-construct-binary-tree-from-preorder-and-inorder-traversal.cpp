@@ -19,7 +19,7 @@ public:
         int inRoot = inMap[root -> val];
         int numsLeft = inRoot - inStart;
 
-        root -> left = helper(preorder, preStart+1, preStart + numsLeft, inorder, inStart, inRoot, inMap);
+        root -> left = helper(preorder, preStart+1, preStart + numsLeft, inorder, inStart, inRoot - 1, inMap);
         root -> right = helper(preorder, preStart + numsLeft + 1, preEnd, inorder, inRoot + 1, inEnd, inMap);
 
         return root;
