@@ -13,17 +13,17 @@ class Solution {
 public:
     int leftHeight(TreeNode* root){
         int count = 0;
-        while(root){
+        while(root -> left){
+            root = root -> left;
             count++;
-            root = root ->left;
         }
         return count;
     }
     int rightHeight(TreeNode* root){
         int count = 0;
-        while(root){
+        while(root -> right){
+            root = root -> right;
             count++;
-            root = root ->right;
         }
         return count;
     }
@@ -34,8 +34,8 @@ public:
         int lh = leftHeight(root);
         int rh = rightHeight(root);
 
-        if(lh == rh) return (1<<lh) - 1;
+        if(lh == rh) ((1 << lh)  - 1);
 
-        return 1 + countNodes(root->left) + countNodes(root->right);
+        return countNodes(root->left) + countNodes(root ->right) + 1;
     }
 };
