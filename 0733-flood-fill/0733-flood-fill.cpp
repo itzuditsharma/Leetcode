@@ -3,6 +3,8 @@ public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
         int n = image.size();
         int m = image[0].size();
+        int key = image[sr][sc];
+        image[sr][sc] = color;
 
         queue<pair<int, int>> q;
         // vector<vector<int>> vis(n,vector<int>(m,0));
@@ -12,16 +14,10 @@ public:
                 vis[i][j] = 0;
             }
         }
-        
         q.push({sr, sc});
-        
+
         int drow[] = {-1, 0, 1, 0};
         int dcol[] = {0, 1, 0, -1};
-
-        int key = image[sr][sc];
-        image[sr][sc] = color;
-
-
         while(!q.empty()){
             int row = q.front().first;
             int col = q.front().second;
