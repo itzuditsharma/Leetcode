@@ -1,40 +1,26 @@
 class Solution {
 public:
-    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
+    void dfs(int row, int col, int initial_color, vector<vector<int>>& image, vector<vector<int>>& new_image, int color, int d_row[], int d_col[]){
+        new_image[row][col] = color;
         int n = image.size();
         int m = image[0].size();
-        int key = image[sr][sc];
-        image[sr][sc] = color;
 
-        queue<pair<int, int>> q;
-        // vector<vector<int>> vis(n,vector<int>(m,0));
-        int vis[n][m];
-        for(int i = 0;i < n; i++){
-            for(int j = 0; j < m; j++){
-                vis[i][j] = 0;
+        for(int i = 0; i < 4; i++){
+            int nrow = row + d_row[i];
+            int ncol = col + d_col[i];
+
+            if(nrow >= 0 && nrow < n && ncol >=0 && ncol < m && image[nrow][ncol] == initial_color && new_image[nrow][ncol] != color){
+                dfs(nrow, ncol, initial_color, image, new_image,color, d_row, d_col);
             }
         }
-        q.push({sr, sc});
+    }
 
-        int drow[] = {-1, 0, 1, 0};
-        int dcol[] = {0, 1, 0, -1};
-        while(!q.empty()){
-            int row = q.front().first;
-            int col = q.front().second;
-            q.pop();
-
-            for(int i = 0; i < 4; i++){
-                int nrow = row + drow[i];
-                int ncol = col + dcol[i];
-
-                if(nrow >=0 && nrow < n && ncol >=0 && ncol < m && image[nrow][ncol] == key && vis[nrow][ncol] != 1){
-                    q.push({nrow, ncol});
-                    vis[nrow][ncol] = 1;
-                    image[nrow][ncol] = color;
-                }
-            }
-        }
-
-        return image;
+    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
+        int initial_color = image[sr][sc];
+        vector<vector<int>> new_image = image;
+        int delta_row[] = {-1, 0, +1, 0};
+        int delta_col[] = {0, +1, 0, -1};
+        dfs(sr, sc, initial_color, image, new_image, color, delta_row, delta_col);
+        return new_image;
     }
 };
