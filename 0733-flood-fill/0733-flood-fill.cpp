@@ -3,6 +3,7 @@ public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
         vector<vector<int>> new_image = image;
         int ini_color = image[sr][sc];
+        new_image[sr][sc] = color;
         queue<pair<int, int>> q;
         q.push({sr, sc});
         int n = image.size();
