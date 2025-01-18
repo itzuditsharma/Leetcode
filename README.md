@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/itzuditsharma/Leetcode/tree/master/0455-assign-cookies) |
 | [0496-next-greater-element-i](https://github.com/itzuditsharma/Leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0503-next-greater-element-ii) |
+| [0542-01-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/itzuditsharma/Leetcode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/itzuditsharma/Leetcode/tree/master/0735-asteroid-collision) |
 | [1034-subarrays-with-k-different-integers](https://github.com/itzuditsharma/Leetcode/tree/master/1034-subarrays-with-k-different-integers) |
@@ -190,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/itzuditsharma/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/itzuditsharma/Leetcode/tree/master/0131-palindrome-partitioning) |
+| [0542-01-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0542-01-matrix) |
 ## Backtracking
 |  |
 | ------- |
@@ -222,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0085-maximal-rectangle](https://github.com/itzuditsharma/Leetcode/tree/master/0085-maximal-rectangle) |
 | [0130-surrounded-regions](https://github.com/itzuditsharma/Leetcode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/itzuditsharma/Leetcode/tree/master/0200-number-of-islands) |
+| [0542-01-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/itzuditsharma/Leetcode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/itzuditsharma/Leetcode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/itzuditsharma/Leetcode/tree/master/1073-number-of-enclaves) |
@@ -424,6 +427,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/itzuditsharma/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/itzuditsharma/Leetcode/tree/master/0200-number-of-islands) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0542-01-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/itzuditsharma/Leetcode/tree/master/0547-number-of-provinces) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/itzuditsharma/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
