@@ -2,14 +2,14 @@ class Solution {
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
         int n = numCourses; 
-         vector<int> indegree(n,0);
-         queue<int> q;
-         vector<int> topo;
-         vector<vector<int>> adj(n);
+        vector<int> indegree(n,0);
+        queue<int> q;
+        vector<int> topo;
+        vector<int> adj[n];
 
-         for(auto it1 : prerequisites ){
-                adj[it1[1]].push_back(it1[0]);
-         }
+        for(auto it : prerequisites ){
+            adj[it[0]].push_back(it[1]);
+        }
 
         for(int i = 0; i < n; i++){
             for(auto it : adj[i]) indegree[it]++;
