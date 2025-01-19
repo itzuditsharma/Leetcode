@@ -23,10 +23,10 @@ public:
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 if(colors[i] == -1){
-                    if(dfs(i, 0, colors, graph) == true) return true;
+                    if(dfs(i, 0, colors, graph) == false) return false;
                 }
             }
         }
-        return false;
+        return true;
     }
 };
