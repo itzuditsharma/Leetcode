@@ -5,7 +5,8 @@ public:
         vector<int> indegree(n,0);
         queue<int> q;
         vector<int> topo;
-        vector<int> adj[n];
+        // vector<int> adj[n];
+        vector<vector<int>> adj(n);
 
         for(auto it : prerequisites ){
             adj[it[0]].push_back(it[1]);
