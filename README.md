@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1171-shortest-path-in-binary-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/itzuditsharma/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/itzuditsharma/Leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Hash Table
 |  |
 | ------- |
@@ -230,6 +231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/itzuditsharma/Leetcode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/itzuditsharma/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Enumeration
 |  |
 | ------- |
@@ -261,6 +263,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/itzuditsharma/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/itzuditsharma/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/itzuditsharma/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -299,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/itzuditsharma/Leetcode/tree/master/0239-sliding-window-maximum) |
+| [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Monotonic Queue
 |  |
 | ------- |
@@ -385,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1073-number-of-enclaves](https://github.com/itzuditsharma/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Binary Tree
 |  |
 | ------- |
@@ -444,6 +449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/itzuditsharma/Leetcode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/itzuditsharma/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -468,6 +474,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/itzuditsharma/Leetcode/tree/master/0547-number-of-provinces) |
 | [0801-is-graph-bipartite](https://github.com/itzuditsharma/Leetcode/tree/master/0801-is-graph-bipartite) |
 | [1073-number-of-enclaves](https://github.com/itzuditsharma/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Graph
 |  |
 | ------- |
