@@ -7,7 +7,7 @@ public:
         if(grid[0][0]!=0 || grid[n-1][m-1]!=0){
             return -1;
         }
-         if(grid[0][0]==0 && n==1 && m==1){
+        if(grid[0][0]==0 && n==1 && m==1){
             return 1;
         }
 
