@@ -60,7 +60,7 @@ public:
 
             mergedMail[node].push_back(mail);
         }
-
+        // Step 3 -> making the answer frame of [name: string] mapping 
         vector<vector<string>> ans;
         for(int i = 0; i < n; i++){
             if(mergedMail[i].size() == 0) continue;
