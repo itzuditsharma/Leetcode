@@ -36,23 +36,23 @@ public:
 
 class Solution {
 public:
-    vector<vector<string>> accountsMerge(vector<vector<string>>& details) {
-        int n = details.size();
+    vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
+        int n = accounts.size();
         DisjointSet ds(n);
         unordered_map<string, int> mapMailNode;
-
+        // Step 1 -> create [  String -> index  ] mappings and if string already mapped Union them 
         for(int i = 0; i < n; i++){
-            for(int j = 1; j < details[i].size(); j++){
-                string mail = details[i][j];
+            for(int j = 1; j < accounts[i].size(); j++){
+                string mail = accounts[i][j];
                 if(mapMailNode.find(mail) == mapMailNode.end()){
                     mapMailNode[mail] = i;
                 }else{
-                    // Union of two
                     ds.unionBySize(i, mapMailNode[mail]);
                 }
             }
         }
 
+        // Step 2 -> Create [node -> vector<strings>] mapping | Each node will have the strings that belong to it
         vector<vector<string>> mergedMail(n);
         for(auto it : mapMailNode){
             string mail = it.first;
@@ -62,13 +62,12 @@ public:
         }
 
         vector<vector<string>> ans;
-
         for(int i = 0; i < n; i++){
             if(mergedMail[i].size() == 0) continue;
             sort(mergedMail[i].begin(), mergedMail[i].end());
             vector<string> temp;
-            temp.push_back(details[i][0]);
-
+            string name = accounts[i][0];
+            temp.push_back(name);
             for(auto it : mergedMail[i]){
                 temp.push_back(it);
             }
