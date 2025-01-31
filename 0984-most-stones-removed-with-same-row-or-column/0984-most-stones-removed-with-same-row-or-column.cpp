@@ -71,7 +71,7 @@ public:
 
         int count = 0;
         for(int i = 0; i < maxRow + maxCol + 1; i++){
-            if(ds.parent[i] == i && ds.size[i] > 0) count++; 
+            if(ds.parent[i] == i && ds.size[i] > 1) count++; 
         }
         return n - count;
     }
