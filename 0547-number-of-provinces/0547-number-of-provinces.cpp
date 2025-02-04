@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void dfs(int node, vector<int> &vis, vector<int> adjls[]){
+    void dfs(int node, vector<int> &vis, vector<vector<int>> &adjls){
         vis[node] = 1;
 
         for(auto it : adjls[node]){
@@ -12,9 +12,9 @@ public:
 
     int findCircleNum(vector<vector<int>>& isConnected) {
         int n = isConnected.size();
-        vector<int> adjls[n];
+        vector<vector<int>> adjls(n);
 
-        for(int i = 0; i< n; i++){
+        for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
                 if(isConnected[i][j] == 1 && i != j){
                     adjls[i].push_back(j);
@@ -23,15 +23,17 @@ public:
             }
         }
 
+        int provinces = 0;
         vector<int> vis(n, 0);
-        int count = 0;
-        for(int i = 0;i < n; i++){
+
+        for(int i = 0; i < n; i++){
             if(!vis[i]){
-                count++;
                 dfs(i, vis, adjls);
+                provinces++;
             }
         }
 
-        return count;
+        return provinces;
+
     }
 };
