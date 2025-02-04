@@ -42,7 +42,7 @@ public:
         }
 
         for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
+            for(int j = 0; j < m; j++){
                 if(grid[i][j] == 1 && vis[i][j] != 2){
                     return -1;
                 }
