@@ -2,21 +2,19 @@ class Solution {
 public:
     int rob(vector<int>& nums) {
         int n = nums.size();
-        vector<int> dp(n + 1, 0);
+        int prev = nums[0];
+        int prev2 = 0;
 
-        dp[0] = nums[0];
-
-        for(int i = 1; i < n; i++){
-            int take =  nums[i];
-
+        for(int i = 0; i < n; i++){
+            int take = nums[i];
             if(i > 1){
-                take += dp[i - 2];
+                take += prev2;
             }
-
-            int not_take = 0 + dp[i-1];
-
-            dp[i] = max(take, not_take);
+            int not_take = 0+prev;
+            int curri = max(take, not_take);
+            prev2 = prev;
+            prev = curri;
         }
-        return dp[n-1];
+        return prev;
     }
 };
