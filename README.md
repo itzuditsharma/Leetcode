@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/itzuditsharma/Leetcode/tree/master/0130-surrounded-regions) |
 | [0135-candy](https://github.com/itzuditsharma/Leetcode/tree/master/0135-candy) |
 | [0136-single-number](https://github.com/itzuditsharma/Leetcode/tree/master/0136-single-number) |
+| [0198-house-robber](https://github.com/itzuditsharma/Leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/itzuditsharma/Leetcode/tree/master/0200-number-of-islands) |
 | [0204-count-primes](https://github.com/itzuditsharma/Leetcode/tree/master/0204-count-primes) |
 | [0216-combination-sum-iii](https://github.com/itzuditsharma/Leetcode/tree/master/0216-combination-sum-iii) |
@@ -200,6 +201,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/itzuditsharma/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/itzuditsharma/Leetcode/tree/master/0131-palindrome-partitioning) |
+| [0198-house-robber](https://github.com/itzuditsharma/Leetcode/tree/master/0198-house-robber) |
 | [0542-01-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0542-01-matrix) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/itzuditsharma/Leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/itzuditsharma/Leetcode/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
