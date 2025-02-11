@@ -26,15 +26,13 @@ public:
         for(int i = 1; i < n; i++){
             vector<int> curr(m, 0);
             for(int j = 0; j < m; j++){
+                int diag_left = 1e9;
+                int diag_right = 1e9;
+
                 int up = matrix[i][j] + prev[j];
 
-                int diag_left = matrix[i][j];
-                if(j-1 >= 0) diag_left += prev[j-1];
-                else diag_left += 1e9;
-
-                int diag_right = matrix[i][j];
-                if(j+1 < m) diag_right += prev[j+1];
-                else diag_right += 1e9;
+                if(j > 0 )diag_left = matrix[i][j] + prev[j-1];
+                if(j < m -1  )diag_right = matrix[i][j] + prev[j+1];
 
                 curr[j] = min(up, min(diag_left, diag_right));
             }
