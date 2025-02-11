@@ -1,8 +1,8 @@
 class Solution {
 public:
     int f(int i, int j, vector<vector<int>>& matrix, vector<vector<int>>& dp){
-        if(j < 0 || j >= matrix.size()) return 1e9;
-        if(i == 0) return matrix[i][j];
+        if(j < 0 || j >= matrix[0].size()) return 1e9;
+        if(i == 0) return matrix[0][j];
 
         if(dp[i][j] != -1) return dp[i][j];
 
@@ -14,22 +14,33 @@ public:
     }
 
     int minFallingPathSum(vector<vector<int>>& matrix) {
-        int sum = 0;
-        for(auto i : matrix){
-            for(auto j : i){
-                sum+=j;
-            }
-        }
-        if(sum==-100 && matrix.size()==100){
-            return -1;
+        int n = matrix.size();
+        int m = matrix[0].size();
+        int dp[n][m];
+        
+        for(int j = 0; j < m; j++){
+            dp[0][j] = matrix[0][j];
         }
 
-        int n = matrix.size();
-        vector<vector<int>> dp(n, vector<int>(n, -1));
+        for(int i = 1; i < n; i++){
+            for(int j = 0; j < m; j++){
+                int up = matrix[i][j] + dp[i-1][j];
+
+                int diag_left = matrix[i][j];
+                if(j-1 >= 0) diag_left += dp[i-1][j-1];
+                else diag_left += 1e9;
+
+                int diag_right = matrix[i][j];
+                if(j+1 < m) diag_right += dp[i-1][j+1];
+                else diag_right += 1e9;
+
+                dp[i][j] = min(up, min(diag_left, diag_right));
+            }
+        }
+
         int min_sum = 1e9;
-        for(int j = 0; j < n; j++){
-            int ans = f(n-1, j, matrix, dp);
-            min_sum = min(min_sum, ans);
+        for(int j = 0; j < m; j++){
+            min_sum = min(min_sum, dp[n-1][j]);
         }
         return min_sum;
     }
