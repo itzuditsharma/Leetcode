@@ -191,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0044-wildcard-matching](https://github.com/itzuditsharma/Leetcode/tree/master/0044-wildcard-matching) |
 | [0076-minimum-window-substring](https://github.com/itzuditsharma/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0079-word-search](https://github.com/itzuditsharma/Leetcode/tree/master/0079-word-search) |
+| [0115-distinct-subsequences](https://github.com/itzuditsharma/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0127-word-ladder](https://github.com/itzuditsharma/Leetcode/tree/master/0127-word-ladder) |
 | [0131-palindrome-partitioning](https://github.com/itzuditsharma/Leetcode/tree/master/0131-palindrome-partitioning) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/itzuditsharma/Leetcode/tree/master/0055-jump-game) |
 | [0085-maximal-rectangle](https://github.com/itzuditsharma/Leetcode/tree/master/0085-maximal-rectangle) |
+| [0115-distinct-subsequences](https://github.com/itzuditsharma/Leetcode/tree/master/0115-distinct-subsequences) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/itzuditsharma/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/itzuditsharma/Leetcode/tree/master/0131-palindrome-partitioning) |
