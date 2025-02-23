@@ -198,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0402-remove-k-digits](https://github.com/itzuditsharma/Leetcode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/itzuditsharma/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
+| [0583-delete-operation-for-two-strings](https://github.com/itzuditsharma/Leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
 | [1170-shortest-common-supersequence](https://github.com/itzuditsharma/Leetcode/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/1250-longest-common-subsequence) |
@@ -223,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0542-01-matrix) |
+| [0583-delete-operation-for-two-strings](https://github.com/itzuditsharma/Leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/itzuditsharma/Leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0967-minimum-falling-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0967-minimum-falling-path-sum) |
 | [1170-shortest-common-supersequence](https://github.com/itzuditsharma/Leetcode/tree/master/1170-shortest-common-supersequence) |
