@@ -1,19 +1,18 @@
 class Solution {
 public:
 
-    int lengthOfLIS(vector<int>& arr) {
-        int n = arr.size();
-        vector<int> temp;
-        temp.push_back(arr[0]);
-        for(int i = 1; i < n; i++){
-            if(arr[i] > temp.back()){
-                temp.push_back(arr[i]);
-            }else{
-                int ind = lower_bound(temp.begin(), temp.end(), arr[i]) - temp.begin();
-                temp[ind] = arr[i];
-            }
+    int f(int ind, int prev, int n, vector<int>& nums, vector<vector<int>> &dp){
+        if(ind == n) return 0;
+        if(dp[ind][prev+1] != -1) return dp[ind][prev+1];
+        int len = f(ind+1, prev, n, nums, dp);
+        if(prev == -1 || nums[prev] < nums[ind]){
+            len = max(len, 1 + f(ind+1, ind, n, nums, dp));
         }
-        
-        return temp.size();
+        return dp[ind][prev+1] = len;
+    }
+    int lengthOfLIS(vector<int>& nums) {
+        int n = nums.size();
+        vector<vector<int>> dp(n, vector<int>(n+1, -1));
+        return f(0, -1, n, nums, dp);
     }
 };
