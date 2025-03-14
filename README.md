@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0045-jump-game-ii) |
 | [0051-n-queens](https://github.com/itzuditsharma/Leetcode/tree/master/0051-n-queens) |
 | [0055-jump-game](https://github.com/itzuditsharma/Leetcode/tree/master/0055-jump-game) |
+| [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0075-sort-colors](https://github.com/itzuditsharma/Leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/itzuditsharma/Leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/itzuditsharma/Leetcode/tree/master/0079-word-search) |
@@ -226,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0044-wildcard-matching](https://github.com/itzuditsharma/Leetcode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/itzuditsharma/Leetcode/tree/master/0055-jump-game) |
+| [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0072-edit-distance](https://github.com/itzuditsharma/Leetcode/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/itzuditsharma/Leetcode/tree/master/0085-maximal-rectangle) |
 | [0115-distinct-subsequences](https://github.com/itzuditsharma/Leetcode/tree/master/0115-distinct-subsequences) |
@@ -283,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/itzuditsharma/Leetcode/tree/master/0037-sudoku-solver) |
+| [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0079-word-search](https://github.com/itzuditsharma/Leetcode/tree/master/0079-word-search) |
 | [0085-maximal-rectangle](https://github.com/itzuditsharma/Leetcode/tree/master/0085-maximal-rectangle) |
 | [0130-surrounded-regions](https://github.com/itzuditsharma/Leetcode/tree/master/0130-surrounded-regions) |
