@@ -191,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/itzuditsharma/Leetcode/tree/master/0002-add-two-numbers) |
 | [0029-divide-two-integers](https://github.com/itzuditsharma/Leetcode/tree/master/0029-divide-two-integers) |
 | [0050-powx-n](https://github.com/itzuditsharma/Leetcode/tree/master/0050-powx-n) |
+| [0070-climbing-stairs](https://github.com/itzuditsharma/Leetcode/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/itzuditsharma/Leetcode/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/itzuditsharma/Leetcode/tree/master/0231-power-of-two) |
 | [0368-largest-divisible-subset](https://github.com/itzuditsharma/Leetcode/tree/master/0368-largest-divisible-subset) |
@@ -231,6 +232,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/itzuditsharma/Leetcode/tree/master/0055-jump-game) |
 | [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
+| [0070-climbing-stairs](https://github.com/itzuditsharma/Leetcode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/itzuditsharma/Leetcode/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/itzuditsharma/Leetcode/tree/master/0085-maximal-rectangle) |
 | [0115-distinct-subsequences](https://github.com/itzuditsharma/Leetcode/tree/master/0115-distinct-subsequences) |
@@ -600,4 +602,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/itzuditsharma/Leetcode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
