@@ -1,11 +1,11 @@
 class Solution {
 public:
-    void dfs(int node, vector<int> &vis, vector<vector<int>> &adjls){
+    void dfs(int node, vector<vector<int>> &adjls, vector<int> &vis){
         vis[node] = 1;
 
         for(auto it : adjls[node]){
             if(!vis[it]){
-                dfs(it, vis, adjls);
+                dfs(it, adjls, vis);
             }
         }
     }
@@ -24,16 +24,15 @@ public:
         }
 
         int provinces = 0;
-        vector<int> vis(n, 0);
+        vector<int> vis(n);
 
         for(int i = 0; i < n; i++){
             if(!vis[i]){
-                dfs(i, vis, adjls);
+                dfs(i, adjls, vis);
                 provinces++;
             }
         }
 
         return provinces;
-
     }
 };
