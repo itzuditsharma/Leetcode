@@ -4,8 +4,8 @@ public:
         priority_queue<pair<int, pair<int, int>>, 
         vector<pair<int, pair<int, int>>>, 
         greater<pair<int, pair<int, int>>>> pq;
-        pq.push({0, {0,0}});
-        // diff , row , col 
+
+        pq.push({0, {0, 0}});
         int n = heights.size();
         int m = heights[0].size();
 
@@ -28,14 +28,15 @@ public:
                 int nrow = row + drow[i];
                 int ncol = col + dcol[i];
 
-                if(nrow >=0 && nrow < n && ncol >=0 && ncol < m){
+                if(nrow >=0 && nrow < n && ncol >= 0 && ncol < m){
                     int newDiff = max(diff, abs(heights[nrow][ncol] - heights[row][col]));
-                    if(dist[nrow][ncol] > newDiff){
+                    if(newDiff < dist[nrow][ncol]){
                         dist[nrow][ncol] = newDiff;
                         pq.push({newDiff, {nrow, ncol}});
                     }
                 }
             }
+        
         }
         return -1;
     }
