@@ -33,7 +33,7 @@ public:
                     ways[adjNode] = ways[node];
                 }else if(dist[adjNode] == edw + dis){
                     dist[adjNode] = edw + dis;
-                    ways[adjNode] = ways[node] + ways[adjNode];
+                    ways[adjNode] = (ways[node] + ways[adjNode])%mod;
                 }
             }
         }
