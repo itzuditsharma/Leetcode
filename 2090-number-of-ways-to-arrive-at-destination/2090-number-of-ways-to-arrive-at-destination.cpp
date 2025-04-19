@@ -13,7 +13,7 @@ public:
         greater<pair<long long, long long>>> pq;
 
         pq.push({0,0});
-        vector<long long int> dist(n, 1e9);
+        vector<long long int> dist(n, 1e18);
         vector<long long int> ways(n, 0);
         dist[0] = 0;
         ways[0] = 1;
