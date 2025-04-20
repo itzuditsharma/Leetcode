@@ -20,13 +20,13 @@ public:
         int mod = 1e9 + 7;
 
         while(!pq.empty()){
-            int dis = pq.top().first;
+            long long dis = pq.top().first;
             int node = pq.top().second;
             pq.pop();
 
             for(auto it : adj[node]){
                 int adjNode = it.first;
-                int edw = it.second;
+                long long edw = it.second;
 
                 if(edw + dis < dist[adjNode]){
                     dist[adjNode] = edw + dis;
