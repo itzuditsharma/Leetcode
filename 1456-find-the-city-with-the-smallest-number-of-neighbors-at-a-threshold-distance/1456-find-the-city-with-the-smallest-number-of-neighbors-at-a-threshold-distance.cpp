@@ -3,13 +3,13 @@ public:
     int findTheCity(int n, vector<vector<int>>& edges, int distanceThreshold) {
         vector<vector<int>> dist(n, vector<int>(n, INT_MAX));
         for(auto it : edges){
-            dist[it[0]][it[1]] =  (it[2]);
-            dist[it[1]][it[0]] =  (it[2]);
+            dist[it[0]][it[1]] = it[2];
+            dist[it[1]][it[0]] = it[2];
         }
-        for(int i = 0; i < n; i++) dist[i][i]=0;
+        for(int i = 0; i < n; i++) dist[i][i] = 0;
 
-        // Floyd Warshall's algo snippet 
-        for(int k = 0;  k < n; k++){
+        // Applying Prims algo 
+        for(int k = 0; k < n; k++){
             for(int i = 0; i < n; i++){
                 for(int j = 0; j < n; j++){
                     if(dist[i][k] == INT_MAX || dist[k][j] == INT_MAX) continue;
@@ -18,8 +18,8 @@ public:
             }
         }
 
-        int cityNumber = -1;
-        int countCities = n;
+        int citycount = n;
+        int citynumber = -1;
 
         for(int city = 0; city < n; city++){
             int count = 0;
@@ -29,11 +29,12 @@ public:
                     count++;
                 }
             }
-            if(count <= countCities){
-                countCities = count;
-                cityNumber = city;
+
+            if(count <= citycount){
+                citycount = count;
+                citynumber = city;
             }
         }
-        return cityNumber;
+        return citynumber;
     }
 };
