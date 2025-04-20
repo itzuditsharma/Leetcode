@@ -12,8 +12,8 @@ public:
 
         pq.push({0,0});  //dist, node
 
-        vector<long long int> dist(n, 1e9);
-        dist[0] = 1;
+        vector<long long int> dist(n, 1e18);
+        dist[0] = 0;
         vector<long long int> ways(n, 0);
         ways[0] = 1;
 
