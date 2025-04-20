@@ -29,7 +29,7 @@ public:
                 int ncol = col + dcol[i];
 
                 if(nrow >=0 && nrow < n && ncol >=0 && ncol < m){
-                    int newDiff = max(diff, heights[nrow][ncol] - heights[row][col]);
+                    int newDiff = max(diff, abs(heights[nrow][ncol] - heights[row][col]));
                     if(newDiff < dist[nrow][ncol]){
                         dist[nrow][ncol]=newDiff;
                         pq.push({newDiff, {nrow, ncol}});
