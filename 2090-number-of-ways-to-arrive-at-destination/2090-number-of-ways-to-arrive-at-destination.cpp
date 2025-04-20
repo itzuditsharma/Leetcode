@@ -12,9 +12,9 @@ public:
 
         pq.push({0,0});  //dist, node
 
-        vector<int> dist(n, 1e9);
+        vector<long long int> dist(n, 1e9);
         dist[0] = 1;
-        vector<int> ways(n, 0);
+        vector<long long int> ways(n, 0);
         ways[0] = 1;
 
         int mod = 1e9 + 7;
