@@ -22,6 +22,8 @@ public:
             int col = it.second.second;
             pq.pop();
 
+            if(row == n-1 && col == m-1) return diff;
+
             for(int i = 0; i < 4; i++){
                 int nrow = row + drow[i];
                 int ncol = col + dcol[i];
@@ -36,7 +38,7 @@ public:
             }
         }
 
-        return dist[n-1][m-1];
+        return -1;
         
     }
 };
