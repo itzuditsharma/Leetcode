@@ -1,36 +1,51 @@
 class DisjointSet{
-    public:
-        vector<int> size, parent;
-        DisjointSet(int n){
-            size.resize(n+1);
-            parent.resize(n+1);
-            for(int i = 0; i <= n; i++){
-                parent[i] = i;
-                size[i] = 1;
-            }
+public:
+    vector<int> rank, parent, size;
+    // Constructor
+    DisjointSet(int n){
+        rank.resize(n+1, 0);
+        parent.resize(n+1);
+        size.resize(n+1);
+        for(int i = 0; i <= n; i++) {
+            parent[i] = i;
+            size[i] = 1;
         }
-
-        int findUPar(int node){
-            if(node == parent[node]){
-                return node;
-            }
-
-            return parent[node] = findUPar(parent[node]);
+    }    
+    // Find ultimate parent of a node
+    int findUPar(int node){
+        if(node == parent[node]){
+            return node;
         }
-
-        void UnionBySize(int u, int v){
-            int ulp_u = findUPar(u);
-            int ulp_v = findUPar(v);
-            if(ulp_u == ulp_v) return;
-
-            if(size[ulp_u] < size[ulp_v]){
-                parent[ulp_u]=ulp_v;
-                size[ulp_v] += size[ulp_u];
-            }else{
-                parent[ulp_v]=ulp_u;
-                size[ulp_u] += size[ulp_v];
-            }
+        return parent[node] = findUPar(parent[node]);
+    }
+    void unionByRank(int u, int v){
+        int ultp_u = findUPar(u);
+        int ultp_v = findUPar(v);
+        if(ultp_u == ultp_v) return;
+        if(rank[ultp_u] < rank[ultp_v]){
+            parent[ultp_u] = ultp_v;
+        }else if(rank[ultp_v] < rank[ultp_u]){
+            parent[ultp_v] = ultp_u;
+        }else{
+            parent[ultp_v] = ultp_u;
+            rank[ultp_u]++;
         }
+    }
+    
+    void unionBySize(int u, int v){
+        int ulp_u = findUPar(u);
+        int ulp_v = findUPar(v);
+        
+        if(ulp_u ==ulp_v) return;
+        
+        if(size[ulp_u] < size[ulp_v]){
+            parent[ulp_u] = ulp_v;
+            size[ulp_v] += size[ulp_u];
+        }else{
+            parent[ulp_v] = ulp_u;
+            size[ulp_u] += size[ulp_v];
+        }
+    }
 };
 
 class Solution {
@@ -49,8 +64,8 @@ public:
 
         for(auto it : stones){
             int nodeRow = it[0];
-            int nodeCol = it[1] + maxcol + 1;
-            ds.UnionBySize(nodeRow, nodeCol);
+            int nodeCol = it[1] + maxrow + 1;
+            ds.unionBySize(nodeRow, nodeCol);
         }
 
         int components = 0;
