@@ -7,7 +7,7 @@ public:
         unordered_map<char, int> mapp;
         int maxx = 1;
         while(j < s.size()){
-            if(mapp.find(s[j]) != mapp.end()){
+            if(mapp.find(s[j]) != mapp.end() && mapp[s[j]] >= i){
                 i = mapp[s[j]]+1;
             }
 
