@@ -1,27 +1,25 @@
 class Solution {
 public:
-    int numberOfSubarrays(vector<int>& nums, int k) {
-        int n = nums.size();
-        vector<int> temp(n);
-        for(int i = 0; i < n; i++){
-            if(nums[i] % 2 == 0){
-                temp[i] = 0;
-            }else{
-                temp[i] = 1;
-            }
-        }
-        int sum = 0;
+    int func(vector<int> &nums, int k){
+        int l = 0;
+        int r = 0;
         int count = 0;
-        unordered_map<int, int> mapp;
-        mapp[0] = 1;
-        for(int i = 0; i < n; i++){
-            sum += temp[i];
-            int remain = sum - k;
-            if(mapp.find(remain) != mapp.end()){
-                count += mapp[remain];
+        int sum = 0;
+
+        while(r < nums.size()){
+            sum += nums[r] % 2;
+            while(sum > k){
+                sum -= nums[l] % 2;
+                l++;
             }
-            mapp[sum]++;
+
+            count+=r-l+1;
+            r++;
         }
         return count;
+    }
+
+    int numberOfSubarrays(vector<int>& nums, int k) {
+        return func(nums, k) - func(nums, k-1);
     }
 };
