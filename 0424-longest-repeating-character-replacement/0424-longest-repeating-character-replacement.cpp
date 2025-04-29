@@ -21,8 +21,8 @@ public:
 
             if((r-l+1) - maxfeq <= k){
                 maxlen = max(maxlen, r-l+1);
-                r++;
             }
+            r++;
 
         }
         return maxlen;
