@@ -8,29 +8,25 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-
-// Sorting list by doing merge sort 
 class Solution {
 public:
-    // Find middle node of  ll
     ListNode* findMiddle(ListNode* head){
         ListNode* slow = head;
-        ListNode* fast = head -> next;  //Just a little change to tortoise and hare 
+        ListNode* fast = head -> next;
 
         while(fast != NULL && fast -> next != NULL){
             slow = slow -> next;
             fast = fast -> next -> next;
         }
         return slow;
-    } 
+    }
 
-    // Merge two sorted lists 
-    ListNode* MergeTwoLists(ListNode* l1, ListNode* l2){
-        ListNode* dummy_node = new ListNode(-1);
-        ListNode* temp = dummy_node;
+    ListNode* merge2Lists(ListNode* l1, ListNode* l2){
+        ListNode* dummy = new ListNode(-1);
+        ListNode* temp = dummy;
 
-        while(l1!= NULL && l2 != NULL){
-            if(l1 -> val < l2 -> val){
+        while(l1 != NULL && l2 != NULL){
+            if(l1->val < l2 -> val){
                 temp -> next = l1;
                 temp = l1;
                 l1 = l1 -> next;
@@ -41,10 +37,10 @@ public:
             }
         }
 
-        if(l1 != NULL) temp ->next = l1;
-        if(l2 != NULL) temp ->next = l2;
+        if(l1 != NULL) temp -> next = l1;
+        if(l2 != NULL) temp -> next = l2;
 
-        return dummy_node -> next;
+        return dummy -> next;
     }
 
     ListNode* sortList(ListNode* head) {
@@ -53,13 +49,13 @@ public:
         }
 
         ListNode* middle = findMiddle(head);
-        ListNode * left = head;
-        ListNode* right = middle-> next;
+        ListNode* left = head;
+        ListNode* right = middle -> next;
         middle -> next = NULL;
 
-        left = sortList(left);    
-        right = sortList(right);    
+        left = sortList(left);
+        right = sortList(right);
 
-        return MergeTwoLists(left, right);
+        return merge2Lists(left, right);
     }
 };
