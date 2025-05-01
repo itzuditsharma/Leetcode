@@ -8,20 +8,19 @@
  */
 class Solution {
 public:
-    // Best Optimal Solution that tends to bring the two pointers on same level
-    ListNode *getIntersectionNode(ListNode *head1, ListNode *head2) {   
-        ListNode* t1 = head1;
-        ListNode* t2 = head2;
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode* l1 = headA;
+        ListNode* l2 = headB;
 
-        while(t1 != t2){
-            t1 = t1 -> next;
-            t2 = t2 -> next;
+        while(l1 != l2){
+            l1 = l1 ->next;
+            l2 = l2 ->next;
 
-            if(t1 == t2) return t1;
+            if(l1 == l2) return l1;
 
-            if(t1 == NULL) t1 = head2;
-            if(t2 == NULL) t2 = head1;
+            if(l1 == NULL) l1 = headB;
+            if(l2 == NULL) l2 = headA;
         }
-        return t1;
+        return l1;
     }
 };
