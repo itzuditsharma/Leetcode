@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/itzuditsharma/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0045-jump-game-ii) |
 | [0051-n-queens](https://github.com/itzuditsharma/Leetcode/tree/master/0051-n-queens) |
+| [0054-spiral-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/itzuditsharma/Leetcode/tree/master/0055-jump-game) |
 | [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/itzuditsharma/Leetcode/tree/master/0073-set-matrix-zeroes) |
@@ -306,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/itzuditsharma/Leetcode/tree/master/0037-sudoku-solver) |
+| [0054-spiral-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0054-spiral-matrix) |
 | [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/itzuditsharma/Leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0079-word-search](https://github.com/itzuditsharma/Leetcode/tree/master/0079-word-search) |
@@ -367,6 +369,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0054-spiral-matrix) |
 | [0735-asteroid-collision](https://github.com/itzuditsharma/Leetcode/tree/master/0735-asteroid-collision) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/itzuditsharma/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Greedy
