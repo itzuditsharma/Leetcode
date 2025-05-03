@@ -11,7 +11,7 @@ public:
             for(int j = 0; j < m; j++){
                 if(matrix[i][j] == 0){
                     row[i] = 1;
-                    col[i] = 1;
+                    col[j] = 1;
                 }
             }
         }
