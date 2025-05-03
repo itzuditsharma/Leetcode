@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0001-two-sum) |
 | [0015-3sum](https://github.com/itzuditsharma/Leetcode/tree/master/0015-3sum) |
+| [0018-4sum](https://github.com/itzuditsharma/Leetcode/tree/master/0018-4sum) |
 | [0027-remove-element](https://github.com/itzuditsharma/Leetcode/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/itzuditsharma/Leetcode/tree/master/0031-next-permutation) |
 | [0037-sudoku-solver](https://github.com/itzuditsharma/Leetcode/tree/master/0037-sudoku-solver) |
@@ -114,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/itzuditsharma/Leetcode/tree/master/0015-3sum) |
+| [0018-4sum](https://github.com/itzuditsharma/Leetcode/tree/master/0018-4sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/itzuditsharma/Leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0027-remove-element](https://github.com/itzuditsharma/Leetcode/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/itzuditsharma/Leetcode/tree/master/0031-next-permutation) |
@@ -193,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/itzuditsharma/Leetcode/tree/master/0015-3sum) |
+| [0018-4sum](https://github.com/itzuditsharma/Leetcode/tree/master/0018-4sum) |
 | [0075-sort-colors](https://github.com/itzuditsharma/Leetcode/tree/master/0075-sort-colors) |
 | [0148-sort-list](https://github.com/itzuditsharma/Leetcode/tree/master/0148-sort-list) |
 | [0229-majority-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0229-majority-element-ii) |
