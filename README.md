@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/itzuditsharma/Leetcode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/itzuditsharma/Leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/itzuditsharma/Leetcode/tree/master/0085-maximal-rectangle) |
+| [0088-merge-sorted-array](https://github.com/itzuditsharma/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/itzuditsharma/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/itzuditsharma/Leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
@@ -123,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/itzuditsharma/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/itzuditsharma/Leetcode/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/itzuditsharma/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/itzuditsharma/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/itzuditsharma/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0148-sort-list](https://github.com/itzuditsharma/Leetcode/tree/master/0148-sort-list) |
@@ -199,6 +201,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/itzuditsharma/Leetcode/tree/master/0018-4sum) |
 | [0056-merge-intervals](https://github.com/itzuditsharma/Leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/itzuditsharma/Leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/itzuditsharma/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0148-sort-list](https://github.com/itzuditsharma/Leetcode/tree/master/0148-sort-list) |
 | [0229-majority-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0229-majority-element-ii) |
 | [0368-largest-divisible-subset](https://github.com/itzuditsharma/Leetcode/tree/master/0368-largest-divisible-subset) |
