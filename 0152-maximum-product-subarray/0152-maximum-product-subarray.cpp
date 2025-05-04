@@ -10,12 +10,11 @@ public:
             if(pre == 0) pre = 1;
             if(suf == 0) suf = 1;
 
-            pre = pre * nums[i];
-            suf = suf * nums[n-i-1];
+            pre *= nums[i];
+            suf *= nums[n-i-1];
 
-            maxx = max(maxx, max(pre, suf));  
+            maxx = max(maxx, max(pre, suf));
         }
-
         return maxx;
     }
 };
