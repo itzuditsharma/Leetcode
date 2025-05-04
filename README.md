@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/itzuditsharma/Leetcode/tree/master/0130-surrounded-regions) |
 | [0135-candy](https://github.com/itzuditsharma/Leetcode/tree/master/0135-candy) |
 | [0136-single-number](https://github.com/itzuditsharma/Leetcode/tree/master/0136-single-number) |
+| [0152-maximum-product-subarray](https://github.com/itzuditsharma/Leetcode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/itzuditsharma/Leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/itzuditsharma/Leetcode/tree/master/0200-number-of-islands) |
 | [0204-count-primes](https://github.com/itzuditsharma/Leetcode/tree/master/0204-count-primes) |
@@ -273,6 +274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0124-binary-tree-maximum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/itzuditsharma/Leetcode/tree/master/0131-palindrome-partitioning) |
 | [0132-palindrome-partitioning-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0132-palindrome-partitioning-ii) |
+| [0152-maximum-product-subarray](https://github.com/itzuditsharma/Leetcode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/itzuditsharma/Leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0213-house-robber-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/0300-longest-increasing-subsequence) |
