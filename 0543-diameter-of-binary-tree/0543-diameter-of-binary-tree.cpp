@@ -11,20 +11,19 @@
  */
 class Solution {
 public:
-    int helper(TreeNode* root, int &maxlen){
+    int findHeight(TreeNode* root, int &diameter){
         if(root == NULL) return 0;
 
-        int lh = helper(root -> left, maxlen);
-        int rh = helper(root -> right, maxlen);
-
-        maxlen = max(maxlen, lh + rh);
+        int lh = findHeight(root -> left, diameter);
+        int rh = findHeight(root -> right, diameter);
+        
+        diameter = max(diameter, lh+rh);
         return max(lh, rh) + 1;
     }
 
-
     int diameterOfBinaryTree(TreeNode* root) {
-        int maxpath = 0;
-        helper(root, maxpath);
-        return maxpath;
+        int diameter = 0;
+        findHeight(root, diameter);
+        return diameter;
     }
 };
