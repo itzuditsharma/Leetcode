@@ -16,11 +16,9 @@ public:
 
         int lh = helper(root -> left);
         if(lh == -1) return -1;
-
         int rh = helper(root -> right);
         if(rh == -1) return -1;
-
-        if(abs(rh - lh) > 1) return -1;
+        if(abs(rh-lh) > 1) return -1;
         return max(lh, rh) + 1;
     }
 
