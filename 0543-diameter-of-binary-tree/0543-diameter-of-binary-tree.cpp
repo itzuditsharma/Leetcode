@@ -17,7 +17,7 @@ public:
         int lh = helper(root -> left, diameter);
         int rh = helper(root -> right, diameter);
 
-        diameter = max(diameter, max(lh, rh));
+        diameter = max(diameter, lh+rh);
         return max(lh, rh) + 1;
 
     }
