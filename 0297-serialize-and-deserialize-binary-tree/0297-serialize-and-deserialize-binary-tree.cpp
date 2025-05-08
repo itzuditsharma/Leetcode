@@ -24,25 +24,25 @@ public:
             if(node == NULL){
                 s.append("#,");
             }else{
-                s.append(to_string(node -> val) + ',');
+                s.append(to_string(node -> val) + ",");
             }
             if(node != NULL){
-                q.push(node -> left);
+                q.push(node-> left);
                 q.push(node -> right);
-            } 
-
-        }
-        return s;
+            }
+        }   
+        return s;     
     }
 
     // Decodes your encoded data to tree.
     TreeNode* deserialize(string data) {
         if(data.size() == 0) return NULL;
-        stringstream ss(data);
         string s;
+        stringstream ss(data);
         getline(ss, s, ',');
         TreeNode* root = new TreeNode(stoi(s));
-        queue<TreeNode* >q;
+
+        queue<TreeNode*> q;
         q.push(root);
 
         while(!q.empty()){
