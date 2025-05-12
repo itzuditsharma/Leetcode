@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/itzuditsharma/Leetcode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/itzuditsharma/Leetcode/tree/master/0735-asteroid-collision) |
+| [0792-binary-search](https://github.com/itzuditsharma/Leetcode/tree/master/0792-binary-search) |
 | [0854-making-a-large-island](https://github.com/itzuditsharma/Leetcode/tree/master/0854-making-a-large-island) |
 | [0966-binary-subarrays-with-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0967-minimum-falling-path-sum) |
@@ -371,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0222-count-complete-tree-nodes](https://github.com/itzuditsharma/Leetcode/tree/master/0222-count-complete-tree-nodes) |
 | [0300-longest-increasing-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/0300-longest-increasing-subsequence) |
+| [0792-binary-search](https://github.com/itzuditsharma/Leetcode/tree/master/0792-binary-search) |
 | [1046-max-consecutive-ones-iii](https://github.com/itzuditsharma/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/itzuditsharma/Leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/itzuditsharma/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
