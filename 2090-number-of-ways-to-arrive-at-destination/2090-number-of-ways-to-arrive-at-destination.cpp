@@ -2,15 +2,14 @@ class Solution {
 public:
     int countPaths(int n, vector<vector<int>>& roads) {
         vector<vector<pair<int, int>>> adj(n);
-        for(auto it : roads){
+        for(auto it: roads){
             adj[it[0]].push_back({it[1], it[2]});
             adj[it[1]].push_back({it[0], it[2]});
         }
-        priority_queue<pair<long long, long long>,
-        vector<pair<long long, long long>>,
-        greater<pair<long long, long long>>> pq;
+        // node -> adjNode, edw 
 
-        pq.push({0,0});  //dist, node
+        priority_queue<pair<long long, long long>, vector<pair<long long, long long>>, greater<pair<long long, long long>>> pq;
+        pq.push({0,0});   // dis, node
 
         vector<long long int> dist(n, 1e18);
         dist[0] = 0;
@@ -34,10 +33,10 @@ public:
                     ways[adjNode] = ways[node];
                 }else if(edw + dis == dist[adjNode]){
                     dist[adjNode] = edw + dis;
-                    ways[adjNode] = (ways[node] + ways[adjNode]) % mod;
+                    ways[adjNode] = (ways[node] + ways[adjNode])%mod;
                 }
             }
         }
         return ways[n-1]%mod;
-    }   
+    }
 };
