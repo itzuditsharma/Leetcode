@@ -6,9 +6,10 @@ public:
             dist[it[0]][it[1]] = it[2];
             dist[it[1]][it[0]] = it[2];
         }
+
         for(int i = 0; i < n; i++) dist[i][i] = 0;
 
-        // Applying Prims algo 
+        // Prim's Algo 
         for(int k = 0; k < n; k++){
             for(int i = 0; i < n; i++){
                 for(int j = 0; j < n; j++){
@@ -18,12 +19,11 @@ public:
             }
         }
 
-        int citycount = n;
         int citynumber = -1;
+        int citycount = n;
 
         for(int city = 0; city < n; city++){
             int count = 0;
-
             for(int adjCity = 0; adjCity < n; adjCity++){
                 if(dist[city][adjCity] <= distanceThreshold){
                     count++;
