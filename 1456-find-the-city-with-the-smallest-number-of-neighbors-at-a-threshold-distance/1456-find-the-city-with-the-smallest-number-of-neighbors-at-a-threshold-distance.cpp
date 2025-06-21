@@ -9,7 +9,7 @@ public:
 
         for(int i = 0; i < n; i++) dist[i][i] = 0;
 
-        // Prim's Algo 
+        // Prim's algo 
         for(int k = 0; k < n; k++){
             for(int i = 0; i < n; i++){
                 for(int j = 0; j < n; j++){
@@ -19,8 +19,8 @@ public:
             }
         }
 
-        int citynumber = -1;
-        int citycount = n;
+        int city_number = -1;
+        int city_count = n;
 
         for(int city = 0; city < n; city++){
             int count = 0;
@@ -30,11 +30,11 @@ public:
                 }
             }
 
-            if(count <= citycount){
-                citycount = count;
-                citynumber = city;
+            if(count <= city_count){
+                city_count = count;
+                city_number = city;
             }
         }
-        return citynumber;
+        return city_number;
     }
 };
