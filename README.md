@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/itzuditsharma/Leetcode/tree/master/0002-add-two-numbers) |
 | [0029-divide-two-integers](https://github.com/itzuditsharma/Leetcode/tree/master/0029-divide-two-integers) |
 | [0050-powx-n](https://github.com/itzuditsharma/Leetcode/tree/master/0050-powx-n) |
+| [0062-unique-paths](https://github.com/itzuditsharma/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/itzuditsharma/Leetcode/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/itzuditsharma/Leetcode/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/itzuditsharma/Leetcode/tree/master/0231-power-of-two) |
@@ -267,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0044-wildcard-matching](https://github.com/itzuditsharma/Leetcode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/itzuditsharma/Leetcode/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/itzuditsharma/Leetcode/tree/master/0062-unique-paths) |
 | [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
 | [0070-climbing-stairs](https://github.com/itzuditsharma/Leetcode/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/itzuditsharma/Leetcode/tree/master/0072-edit-distance) |
@@ -676,4 +678,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1724-customer-who-visited-but-did-not-make-any-transactions](https://github.com/itzuditsharma/Leetcode/tree/master/1724-customer-who-visited-but-did-not-make-any-transactions) |
 | [1801-average-time-of-process-per-machine](https://github.com/itzuditsharma/Leetcode/tree/master/1801-average-time-of-process-per-machine) |
 | [1908-recyclable-and-low-fat-products](https://github.com/itzuditsharma/Leetcode/tree/master/1908-recyclable-and-low-fat-products) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/itzuditsharma/Leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
