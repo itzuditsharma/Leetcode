@@ -1,23 +1,26 @@
 class Solution {
 public:
-    int f(int ind, int T, vector<int>& coins, vector<vector<int>> &dp){
-        if(ind == 0){
-            return (T % coins[0] == 0);
-        }   
+    int f(int i, int amount, vector<int>& coins, vector<vector<int>> &dp){
+        if(i == 0){
+            if(amount % coins[i] == 0){
+                return 1;
+            }else{
+                return 0;
+            }
+        }
 
-        if(dp[ind][T] != -1) return dp[ind][T];
+        if(dp[i][amount] != -1) return dp[i][amount];
 
-        int nottake = f(ind -1, T, coins, dp);
+        int nottake = f(i-1, amount, coins, dp);
         int take = 0;
-        if(coins[ind] <= T) take = f(ind, T - coins[ind], coins, dp);
+        if(coins[i] <= amount) take = f(i, amount - coins[i], coins, dp);
 
-        return dp[ind][T] = take + nottake;
+        return dp[i][amount] = take + nottake;
     }
 
     int change(int amount, vector<int>& coins) {
-        int n  = coins.size();
-        vector<vector<int>> dp(n, vector<int>(amount+1, -1));
-        int ans = f(n-1, amount, coins, dp);
-        return ans;
+        int n = coins.size();
+        vector<vector<int>> dp(n, vector<int>(amount + 1, -1));
+        return f(n-1, amount, coins, dp);
     }
 };
