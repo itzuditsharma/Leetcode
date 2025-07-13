@@ -4,25 +4,18 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
+
+        words = s.split()
+        stack = []
+
+        for i in words:
+            stack.append(i)
+
+        rev_words = []
+        while stack:
+            rev_words.append(stack.pop())
         
-        temp = ""
-        ans = ""
-
-        for i in range(len(s)):
-            ch = s[i]
-
-            if ch!=" ":
-                temp += ch
-            else:
-                if ans != "":
-                    ans = temp + ("" if temp == "" else " ") + ans
-                else:
-                    ans = temp
-                temp = ""
-
-        if temp != "":
-            if ans != "":
-                ans = temp + " " + ans
-            else:
-                ans = temp
+        ans = ' '.join(rev_words)
+        
         return ans
+        
