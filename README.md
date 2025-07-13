@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/itzuditsharma/Leetcode/tree/master/0216-combination-sum-iii) |
 | [0229-majority-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0229-majority-element-ii) |
 | [0239-sliding-window-maximum](https://github.com/itzuditsharma/Leetcode/tree/master/0239-sliding-window-maximum) |
+| [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/itzuditsharma/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0312-burst-balloons](https://github.com/itzuditsharma/Leetcode/tree/master/0312-burst-balloons) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/itzuditsharma/Leetcode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/itzuditsharma/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0229-majority-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0229-majority-element-ii) |
+| [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0387-first-unique-character-in-a-string](https://github.com/itzuditsharma/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/itzuditsharma/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/itzuditsharma/Leetcode/tree/master/0496-next-greater-element-i) |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/itzuditsharma/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0148-sort-list](https://github.com/itzuditsharma/Leetcode/tree/master/0148-sort-list) |
 | [0229-majority-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0229-majority-element-ii) |
+| [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0368-largest-divisible-subset](https://github.com/itzuditsharma/Leetcode/tree/master/0368-largest-divisible-subset) |
 | [0455-assign-cookies](https://github.com/itzuditsharma/Leetcode/tree/master/0455-assign-cookies) |
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
@@ -233,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/itzuditsharma/Leetcode/tree/master/0070-climbing-stairs) |
 | [0204-count-primes](https://github.com/itzuditsharma/Leetcode/tree/master/0204-count-primes) |
 | [0231-power-of-two](https://github.com/itzuditsharma/Leetcode/tree/master/0231-power-of-two) |
+| [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0368-largest-divisible-subset](https://github.com/itzuditsharma/Leetcode/tree/master/0368-largest-divisible-subset) |
 | [1370-count-number-of-nice-subarrays](https://github.com/itzuditsharma/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/itzuditsharma/Leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
@@ -338,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/itzuditsharma/Leetcode/tree/master/0136-single-number) |
 | [0222-count-complete-tree-nodes](https://github.com/itzuditsharma/Leetcode/tree/master/0222-count-complete-tree-nodes) |
 | [0231-power-of-two](https://github.com/itzuditsharma/Leetcode/tree/master/0231-power-of-two) |
+| [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/itzuditsharma/Leetcode/tree/master/0338-counting-bits) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/itzuditsharma/Leetcode/tree/master/2323-minimum-bit-flips-to-convert-number) |
 ## Matrix
@@ -392,6 +397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/itzuditsharma/Leetcode/tree/master/0035-search-insert-position) |
 | [0162-find-peak-element](https://github.com/itzuditsharma/Leetcode/tree/master/0162-find-peak-element) |
 | [0222-count-complete-tree-nodes](https://github.com/itzuditsharma/Leetcode/tree/master/0222-count-complete-tree-nodes) |
+| [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0300-longest-increasing-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0410-split-array-largest-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0410-split-array-largest-sum) |
 | [0792-binary-search](https://github.com/itzuditsharma/Leetcode/tree/master/0792-binary-search) |
