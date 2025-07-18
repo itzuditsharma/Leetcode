@@ -15,5 +15,5 @@ class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
         n = len(s)
         s2 = s[::-1]
-        dp = [[-1 for i in range(n+1)] for _ in range(n+1)]
+        dp = [[-1 for i in range(n)] for _ in range(n)]
         return self.LCS(s, s2, n-1, n-1, dp)
