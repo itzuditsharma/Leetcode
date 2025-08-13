@@ -1,21 +1,18 @@
 class Solution:
-
-    def generic_func(self,st1, st2, dicti):
-        for i in range(len(st1)):
-            t_val = st2[i]
-            if dicti[st1[i]] != t_val:
-                return False
-        return True
-
     def isIsomorphic(self, s: str, t: str) -> bool:
-        dicti1 = dict()
-        for i in range(len(s)):
-            dicti1[s[i]] = t[i]
+        if len(s) != len(t):
+            return False
 
-        dicti2 = dict()
-        for i in range(len(t)):
-            dicti2[t[i]] = s[i]
+        map1 = {}
+        map2 = {}
 
-        return self.generic_func(s,t,dicti1) and self.generic_func(t,s, dicti2)
+        for ch1, ch2 in zip(s, t):
+            if ch1 in map1 and map1[ch1] != ch2:
+                return False
+            if ch2 in map2 and map2[ch2] != ch1:
+                return False
+            
+            map1[ch1] = ch2
+            map2[ch2] = ch1
 
-        
+        return True
