@@ -5,7 +5,7 @@ class Solution:
         j = 0
         maxlen = 0
         maxfeq = 0
-        hash_array = [0 for _ in range(26)]
+        hash_array = [0] * 26
 
         while j < n:    
             hash_array[ord(s[j]) - ord('A')] += 1
@@ -14,9 +14,7 @@ class Solution:
             while (j-i+1) - maxfeq > k:
                 hash_array[ord(s[i]) - ord('A')] -= 1
                 i+=1
-                maxfeq = 0
-                for idx in range(26):
-                    maxfeq = max(maxfeq, hash_array[idx])
+                maxfeq = max(hash_array)
 
             maxlen = max(maxlen, j-i+1)
             j+=1
