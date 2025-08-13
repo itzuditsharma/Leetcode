@@ -10,6 +10,6 @@ class Solution:
                 if len(stack) != 0:
                     stack.pop()
 
-        max_size = max(max_size, len(stack))
+        # max_size = max(max_size, len(stack))
 
         return max_size
