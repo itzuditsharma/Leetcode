@@ -1,21 +1,16 @@
 class Solution(object):
     def reverseWords(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-
         words = s.split()
         stack = []
 
-        for i in words:
-            stack.append(i)
+        for word in words:
+            stack.append(word)
 
         rev_words = []
         while stack:
             rev_words.append(stack.pop())
+
+        return " ".join(rev_words)
+
         
-        ans = ' '.join(rev_words)
-        
-        return ans
         
