@@ -15,8 +15,8 @@ class Solution:
                 if not stack or stack[-1] != dicti[char]:
                     return False
                 stack.pop()
-            else:
-                return False
+            # else:
+            #     return False
 
         if len(stack) == 0:
             return True
