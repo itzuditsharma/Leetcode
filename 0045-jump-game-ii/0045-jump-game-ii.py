@@ -7,7 +7,7 @@ class Solution:
         while r < n-1:
             farthest = 0
             for i in range(l, r+1):
-                farthest = max(farthest, nums[i] + 1)
+                farthest = max(farthest, i + nums[i] )
             l = r + 1
             r = farthest
             count+=1
