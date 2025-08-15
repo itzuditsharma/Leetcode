@@ -1,21 +1,14 @@
 class Solution:
-    def solve(self, ind, nums, dp, n):
-        if ind >= n-1:
-            return 0
-            
-        if dp[ind] != -1:
-            return dp[ind]
-
-        mini = 1e9
-        for i in range(1, nums[ind] + 1):
-            jumps = 1 + self.solve(ind + i, nums, dp, n)
-            mini = min(mini, jumps)
-        
-        dp[ind] = mini
-        return dp[ind]
-
-
     def jump(self, nums: List[int]) -> int:
+        l = 0
+        r = 0
+        count = 0
         n = len(nums)
-        dp = [-1] * n
-        return self.solve(0, nums, dp, n)
+        while r < n-1:
+            farthest = 0
+            for i in range(l, r+1):
+                farthest = max(farthest, nums[i] + 1)
+            l = r + 1
+            r = farthest
+            count+=1
+        return count
