@@ -113,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0160-intersection-of-two-linked-lists](https://github.com/itzuditsharma/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0205-isomorphic-strings](https://github.com/itzuditsharma/Leetcode/tree/master/0205-isomorphic-strings) |
 | [0229-majority-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0229-majority-element-ii) |
+| [0242-valid-anagram](https://github.com/itzuditsharma/Leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0387-first-unique-character-in-a-string](https://github.com/itzuditsharma/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/itzuditsharma/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
@@ -224,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/itzuditsharma/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0148-sort-list](https://github.com/itzuditsharma/Leetcode/tree/master/0148-sort-list) |
 | [0229-majority-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0229-majority-element-ii) |
+| [0242-valid-anagram](https://github.com/itzuditsharma/Leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0368-largest-divisible-subset](https://github.com/itzuditsharma/Leetcode/tree/master/0368-largest-divisible-subset) |
 | [0451-sort-characters-by-frequency](https://github.com/itzuditsharma/Leetcode/tree/master/0451-sort-characters-by-frequency) |
@@ -272,6 +274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0132-palindrome-partitioning-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0132-palindrome-partitioning-ii) |
 | [0151-reverse-words-in-a-string](https://github.com/itzuditsharma/Leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0205-isomorphic-strings](https://github.com/itzuditsharma/Leetcode/tree/master/0205-isomorphic-strings) |
+| [0242-valid-anagram](https://github.com/itzuditsharma/Leetcode/tree/master/0242-valid-anagram) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0387-first-unique-character-in-a-string](https://github.com/itzuditsharma/Leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0402-remove-k-digits](https://github.com/itzuditsharma/Leetcode/tree/master/0402-remove-k-digits) |
