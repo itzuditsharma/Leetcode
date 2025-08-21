@@ -3,11 +3,10 @@ class Solution:
         n = len(strs)
         mapp = {}
 
-        for it in strs:
-            key = "".join(sorted(it))
-
+        for s in strs:
+            key = "".join(sorted(s))
             if key not in mapp.keys():
                 mapp[key] = []
-            mapp[key].append(it)
+            mapp[key].append(s)
 
         return list(mapp.values())
