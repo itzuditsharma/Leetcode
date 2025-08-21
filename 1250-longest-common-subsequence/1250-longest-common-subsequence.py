@@ -1,26 +1,22 @@
 class Solution:
-
-    def LCS(self, ind1, ind2, text1, text2, dp):
-        if ind1 == 0 or ind2 == 0:
+    def lcs(self, i, j, text1, text2, dp):
+        if i < 0 or j < 0:
             return 0
+
+        if dp[i][j] != -1:
+            return dp[i][j]
         
-        if dp[ind1][ind2] != -1:
-            return dp[ind1][ind2] 
-
-        if text1[ind1-1]  == text2[ind2-1]:
-            dp[ind1][ind2] =  1 + self.LCS(ind1-1, ind2-1, text1, text2, dp)
-            return dp[ind1][ind2]
-
-        dp[ind1][ind2] = 0 + max(self.LCS(ind1-1, ind2, text1, text2, dp), self.LCS(ind1, ind2-1, text1, text2, dp))
+        if text1[i] == text2[j]:
+            dp[i][j]  =  1 + self.lcs(i-1, j-1, text1, text2, dp)
+            return dp[i][j]
         
-        return dp[ind1][ind2]
-
-
+        dp[i][j] = max(self.lcs(i-1, j, text1, text2, dp), self.lcs(i, j-1, text1, text2, dp))
+        return dp[i][j]
 
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         n = len(text1)
         m = len(text2)
 
-        dp = [[-1 for _ in range(m+1)] for _ in range(n+1)]
-        return self.LCS(n,m,text1, text2, dp)
+        dp = [[-1 for _ in range(m)] for _ in range(n)]
 
+        return self.lcs(n-1, m-1, text1, text2, dp)
