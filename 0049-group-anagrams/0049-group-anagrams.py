@@ -6,7 +6,7 @@ class Solution:
         for it in strs:
             key = "".join(sorted(it))
 
-            if key not in mapp:
+            if key not in mapp.keys():
                 mapp[key] = []
             mapp[key].append(it)
 
