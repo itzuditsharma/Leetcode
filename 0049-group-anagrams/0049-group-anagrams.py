@@ -1,6 +1,5 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        ans = []
         mapp = {}
 
         for x in strs:
@@ -9,7 +8,4 @@ class Solution:
                 mapp[key] = []
             mapp[key].append(x)
 
-        for key, val in mapp.items():
-            ans.append(val)
-        
-        return ans
+        return list(mapp.values())
