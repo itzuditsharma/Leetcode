@@ -9,8 +9,6 @@ class Solution:
             if mapp.get(s_list[i]) is not None:
                 if mapp[s_list[i]] != pattern[i]:
                     return False
-                else:
-                    mapp[s_list[i]] = pattern[i]
             else:
                 if pattern[i] in mapp.values():
                     return False
