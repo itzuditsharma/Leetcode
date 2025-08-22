@@ -3,7 +3,7 @@ class Solution:
         nums1.sort()
         nums2.sort()
 
-        i , j = 0, 0
+        i, j = 0, 0
         ans = []
         n = len(nums1)
         m = len(nums2)
