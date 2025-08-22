@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0854-making-a-large-island](https://github.com/itzuditsharma/Leetcode/tree/master/0854-making-a-large-island) |
 | [0966-binary-subarrays-with-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0967-minimum-falling-path-sum) |
+| [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1034-subarrays-with-k-different-integers](https://github.com/itzuditsharma/Leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1036-rotting-oranges](https://github.com/itzuditsharma/Leetcode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/itzuditsharma/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
@@ -221,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/itzuditsharma/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/itzuditsharma/Leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0148-sort-list](https://github.com/itzuditsharma/Leetcode/tree/master/0148-sort-list) |
+| [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Sorting
 |  |
 | ------- |
@@ -238,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/itzuditsharma/Leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0455-assign-cookies](https://github.com/itzuditsharma/Leetcode/tree/master/0455-assign-cookies) |
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
+| [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/itzuditsharma/Leetcode/tree/master/1669-minimum-cost-to-cut-a-stick) |
@@ -258,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/itzuditsharma/Leetcode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/itzuditsharma/Leetcode/tree/master/0268-missing-number) |
 | [0368-largest-divisible-subset](https://github.com/itzuditsharma/Leetcode/tree/master/0368-largest-divisible-subset) |
+| [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1370-count-number-of-nice-subarrays](https://github.com/itzuditsharma/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/itzuditsharma/Leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [2032-largest-odd-number-in-string](https://github.com/itzuditsharma/Leetcode/tree/master/2032-largest-odd-number-in-string) |
@@ -494,6 +498,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/itzuditsharma/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0451-sort-characters-by-frequency](https://github.com/itzuditsharma/Leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/itzuditsharma/Leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
+| [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1753-path-with-minimum-effort](https://github.com/itzuditsharma/Leetcode/tree/master/1753-path-with-minimum-effort) |
 ## Monotonic Queue
 |  |
@@ -765,4 +770,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/itzuditsharma/Leetcode/tree/master/0451-sort-characters-by-frequency) |
+## Geometry
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
+## Quickselect
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
