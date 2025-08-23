@@ -1,18 +1,24 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
+        mapp1 = {}
+        mapp2 = {}
+
         if len(s) != len(t):
             return False
+        
+        i = 0
+        j = 0
 
-        map1 = {}
-        map2 = {}
-
-        for ch1, ch2 in zip(s, t):
-            if ch1 in map1 and map1[ch1] != ch2:
+        while i < len(s) and j < len(t):
+            if s[i] in mapp1 and mapp1[s[i]] != t[j]:
                 return False
-            if ch2 in map2 and map2[ch2] != ch1:
+            if t[j] in mapp2 and mapp2[t[j]] != s[i]:
                 return False
             
-            map1[ch1] = ch2
-            map2[ch2] = ch1
+            mapp1[s[i]] = t[j]
+            mapp2[t[j]] = s[i]
 
+            i+=1 
+            j+=1
+        
         return True
