@@ -1,15 +1,16 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
         mapp = {}
-        summ = 0
-        count = 0
         mapp[0] = 1
-        n = len(nums)
-        for i in range(n):
-            summ += nums[i]
-            remain = summ - k
+        total = 0
+        sum = 0
+        for i in nums:
+            sum += i
+            remain = sum - k
+
             if remain in mapp:
-                count += mapp[remain]
-            mapp[summ] = mapp.get(summ, 0) + 1
+                total += mapp[remain]
+            
+            mapp[sum] = mapp.get(sum, 0) + 1
         
-        return count
+        return total
