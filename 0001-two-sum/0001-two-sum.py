@@ -1,12 +1,10 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        mapp = {}
-
-        for i in range(len(nums)):
-            remain = target - nums[i]
-            if remain in mapp:
-                return [mapp[remain], i]
-            
-            mapp[nums[i]] = i
+        mapp = defaultdict(int)
+        for idx, val in enumerate(nums):
+            remain = target - val
+            if remain in mapp.keys():
+                return [mapp[remain], idx]
+            mapp[val] = idx
         
         return []
