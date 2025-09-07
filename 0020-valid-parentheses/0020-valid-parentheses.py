@@ -1,24 +1,18 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        dicti = {
-            ")" : "(",
-            "]" : "[",
-            "}" : "{"
+        mapp = {
+            ')' : '(',
+            '}' : '{',
+            ']' : '['
         }
         stack = []
-        n = len(s)
 
-        for char in s:
-            if char in dicti.values():
-                stack.append(char)
-            elif char in dicti.keys():
-                if not stack or stack[-1] != dicti[char]:
+        for val in s:
+            if val in mapp.values():
+                stack.append(val)
+            else:
+                if not stack or stack[-1] != mapp[val]:
                     return False
                 stack.pop()
-            # else:
-            #     return False
-
-        if len(stack) == 0:
-            return True
-        else:
-            return False
+            
+        return len(stack) == 0
