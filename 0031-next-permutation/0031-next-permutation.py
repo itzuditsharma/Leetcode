@@ -14,7 +14,7 @@ class Solution:
                 if nums[i] > nums[index]:
                     nums[i], nums[index] = nums[index], nums[i]
                     break
-            nums[index+1:] = nums[index+1:][::-1] 
+            nums[index+1:] = reversed(nums[index+1:])
         
         return nums
 
