@@ -1,7 +1,7 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        mapp = Counter(nums)
-        for key, val in mapp.items():
-            if val == 1:
-                return key
-        return -1
+        xor1 = 0
+        for i in range(len(nums)):
+            xor1 ^= nums[i]
+        
+        return xor1
