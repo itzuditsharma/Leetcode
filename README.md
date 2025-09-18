@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/itzuditsharma/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0045-jump-game-ii) |
+| [0048-rotate-image](https://github.com/itzuditsharma/Leetcode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/itzuditsharma/Leetcode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/itzuditsharma/Leetcode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/itzuditsharma/Leetcode/tree/master/0053-maximum-subarray) |
@@ -282,6 +283,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/itzuditsharma/Leetcode/tree/master/0002-add-two-numbers) |
 | [0013-roman-to-integer](https://github.com/itzuditsharma/Leetcode/tree/master/0013-roman-to-integer) |
 | [0029-divide-two-integers](https://github.com/itzuditsharma/Leetcode/tree/master/0029-divide-two-integers) |
+| [0048-rotate-image](https://github.com/itzuditsharma/Leetcode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/itzuditsharma/Leetcode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/itzuditsharma/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/itzuditsharma/Leetcode/tree/master/0070-climbing-stairs) |
@@ -423,6 +425,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/itzuditsharma/Leetcode/tree/master/0037-sudoku-solver) |
+| [0048-rotate-image](https://github.com/itzuditsharma/Leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0054-spiral-matrix) |
 | [0063-unique-paths-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0064-minimum-path-sum) |
