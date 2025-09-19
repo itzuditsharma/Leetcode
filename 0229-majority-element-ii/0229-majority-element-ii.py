@@ -2,8 +2,8 @@ class Solution:
     def majorityElement(self, nums: List[int]) -> List[int]:
         count1 = 0
         count2 = 0
-        element1 = -1
-        element2 = -1
+        element1 = -1e9
+        element2 = -1e9
         n = len(nums)
 
         for i in range(n):
