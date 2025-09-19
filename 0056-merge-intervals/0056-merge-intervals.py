@@ -9,5 +9,6 @@ class Solution:
             else:
                 ans.append(temp_interval)
                 temp_interval = interval
+        
         ans.append(temp_interval)
         return ans
