@@ -13,8 +13,8 @@ class Solution:
                 low += 1
                 high -= 1
                 continue
-                
-            if nums[mid] < nums[high]:
+
+            if nums[mid] <= nums[high]:
                 if nums[mid] <= target and target <= nums[high]:
                     low = mid + 1
                 else:
