@@ -1,72 +1,34 @@
-class LRUCache {
+class LRUCache{
+    int capacity;
+    list<pair<int,int>> items;  // key-value pairs
+    unordered_map<int, list<pair<int,int>>::iterator> cache;  
+
 public:
-    class Node{
-        public:
-            int key;
-            int val;
-            Node* next;
-            Node* prev;
+    LRUCache(int cap) : capacity(cap) {}
 
-            Node(int _key, int _val){
-                key = _key;
-                val = _val;
-            }
-    };
-
-    Node*head = new Node(-1, -1);
-    Node*tail = new Node(-1, -1);
-    unordered_map<int, Node*> mapp;
-    int cap;
-
-    LRUCache(int capacity) {
-        cap = capacity;
-        head -> next = tail;
-        tail -> prev = head;
+    void put(int key, int value){
+        if (cache.find(key) != cache.end()) {
+            items.erase(cache[key]);
+        } else if (items.size() == capacity) {
+            auto last = items.back();
+            cache.erase(last.first);
+            items.pop_back();
+        }
+        items.push_front({key, value});
+        cache[key] = items.begin();
     }
 
-    void delNode(Node* resNode){
-        Node* prevNode = resNode -> prev;
-        Node* nextNode = resNode -> next;
-
-        prevNode -> next = nextNode;
-        nextNode -> prev = prevNode;
-    }
-
-    void addNode(Node* resNode){
-        resNode -> next = head -> next;
-        resNode -> prev = head;
-        head -> next -> prev = resNode;
-        head -> next = resNode;
-    }
-    
     int get(int key) {
-        if (mapp.find(key) != mapp.end()){
-            Node* resNode = mapp[key];
-            int ans = resNode -> val;
-            mapp.erase(key);
-
-            // delete Node 
-            delNode(resNode);
-            // Insert Node 
-            addNode(resNode);
-            mapp[key] = head -> next;
-            return ans;
+        if (cache.find(key) == cache.end()) {
+            return -1;
         }
-        return -1;
-    }
-    
-    void put(int key, int value) {
-        if(mapp.find(key) != mapp.end()){
-            Node* resNode = mapp[key];
-            delNode(resNode);
-            mapp.erase(key);
-        }
-        if(mapp.size()== cap){
-            mapp.erase(tail -> prev -> key);
-            delNode(tail -> prev);
-        }
-        addNode(new Node(key, value));
-        mapp[key] = head -> next;
+        // move item to front
+        auto it = cache[key];
+        int value = it->second;
+        items.erase(it);
+        items.push_front({key, value});
+        cache[key] = items.begin();
+        return value;
     }
 };
 
