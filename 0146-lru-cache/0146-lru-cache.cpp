@@ -4,8 +4,8 @@ public:
         public:
             int key;
             int val;
-            Node* prev;
             Node* next;
+            Node* prev;
 
             Node(int _key, int _val){
                 key = _key;
@@ -13,9 +13,8 @@ public:
             }
     };
 
-    Node* head = new Node(-1, -1);
-    Node* tail = new Node(-1, -1);
-
+    Node*head = new Node(-1, -1);
+    Node*tail = new Node(-1, -1);
     unordered_map<int, Node*> mapp;
     int cap;
 
@@ -25,47 +24,46 @@ public:
         tail -> prev = head;
     }
 
-    void addNode(Node* new_node){
-        Node* temp = head -> next;
-        new_node -> next = temp;
-        temp -> prev = new_node;
+    void delNode(Node* resNode){
+        Node* prevNode = resNode -> prev;
+        Node* nextNode = resNode -> next;
 
-        head -> next = new_node;
-        new_node -> prev = head;
+        prevNode -> next = nextNode;
+        nextNode -> prev = prevNode;
     }
 
-    void deleteNode(Node* delNode){
-        Node* delprev = delNode -> prev;
-        Node* delnext = delNode -> next;
-
-        delprev -> next = delnext;
-        delnext -> prev = delprev;
+    void addNode(Node* resNode){
+        resNode -> next = head -> next;
+        resNode -> prev = head;
+        head -> next -> prev = resNode;
+        head -> next = resNode;
     }
     
     int get(int key) {
-        if(mapp.find(key)!=mapp.end()){
+        if (mapp.find(key) != mapp.end()){
             Node* resNode = mapp[key];
             int ans = resNode -> val;
             mapp.erase(key);
 
-            deleteNode(resNode);
+            // delete Node 
+            delNode(resNode);
+            // Insert Node 
             addNode(resNode);
             mapp[key] = head -> next;
             return ans;
         }
-
         return -1;
     }
     
     void put(int key, int value) {
-        if(mapp.find(key)!=mapp.end()){
-            Node* existingNode = mapp[key];
-            deleteNode(existingNode);
+        if(mapp.find(key) != mapp.end()){
+            Node* resNode = mapp[key];
+            delNode(resNode);
             mapp.erase(key);
         }
-        if(mapp.size() == cap){
+        if(mapp.size()== cap){
             mapp.erase(tail -> prev -> key);
-            deleteNode(tail -> prev);
+            delNode(tail -> prev);
         }
         addNode(new Node(key, value));
         mapp[key] = head -> next;
