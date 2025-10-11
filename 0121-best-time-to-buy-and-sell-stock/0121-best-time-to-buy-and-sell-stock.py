@@ -1,10 +1,11 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+        minday = prices[0]
         maxprofit = 0
-        mini = prices[0]
         for i in range(1, len(prices)):
-            cost = prices[i] - mini
-            maxprofit = max(maxprofit,cost)
-            mini = min(mini, prices[i])
-
+            profit = prices[i] - minday
+            maxprofit = max(maxprofit, profit)
+            if prices[i] < minday:
+                minday = prices[i]
+        
         return maxprofit
