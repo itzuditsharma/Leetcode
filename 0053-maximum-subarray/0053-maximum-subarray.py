@@ -3,13 +3,13 @@ class Solution:
         maxsum = -1e9
         sum = 0
 
-        for i in range(len(nums)):
-            sum += nums[i]
+        for num in nums:
+            sum += num
 
             if sum > maxsum:
                 maxsum = sum
-            
+
             if sum < 0:
                 sum = 0
-
+        
         return maxsum
