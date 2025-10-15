@@ -14,7 +14,6 @@ class Solution:
 
         return dp[i][j]
 
-
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         n = len(text1)
         m = len(text2)
