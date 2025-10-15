@@ -1,13 +1,14 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
+        n = len(strs)
         sorted_strs = sorted(strs)
-        min_len = len(sorted_strs[0])
-        ans = ""
         smallest = sorted_strs[0]
-        n=len(sorted_strs)
+        min_len = len(smallest)
         largest = sorted_strs[n-1]
+        ans = ""
         for i in range(min_len):
             if smallest[i] != largest[i]:
                 break
             ans += smallest[i]
         return ans
+        
