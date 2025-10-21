@@ -2,13 +2,14 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
+        
         mapp = {}
-        for val in s:
-            mapp[val] = mapp.get(val, 0) + 1
+        for x in s:
+            mapp[x] = mapp.get(x, 0) + 1
 
-        for x in t:
-            if x not in mapp or mapp[x] == 0:
+        for val in t:
+            if val not in mapp or mapp[val] == 0:
                 return False
-            mapp[x] -= 1
-
-        return True 
+            mapp[val] -= 1
+        
+        return True
