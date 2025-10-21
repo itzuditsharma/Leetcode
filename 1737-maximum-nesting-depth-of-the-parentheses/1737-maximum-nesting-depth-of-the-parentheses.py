@@ -7,8 +7,8 @@ class Solution:
                 stack.append(s[i])
                 max_size = max(max_size, len(stack))
             elif s[i] == ')':
-                if len(stack) != 0:
-                    stack.pop()
+                # if len(stack) != 0:
+                stack.pop()
 
         # max_size = max(max_size, len(stack))
 
