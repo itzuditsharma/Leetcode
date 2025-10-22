@@ -1,6 +1,6 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-        roman_map = {
+        mapp = {
             "I" : 1,
             "V" : 5,
             "X" : 10,
@@ -10,13 +10,12 @@ class Solution:
             "M" : 1000
         }
 
+        summ = 0
         n = len(s)
-        sum = 0
-
         for i in range(n):
-            if i + 1 < n and roman_map[s[i]] < roman_map[s[i+1]]:
-                sum -= roman_map[s[i]]
+            if i + 1 < n and mapp[s[i]] < mapp[s[i+1]]:
+                summ -= mapp[s[i]]
             else:
-                sum += roman_map[s[i]]
+                summ += mapp[s[i]]
         
-        return sum
+        return summ
