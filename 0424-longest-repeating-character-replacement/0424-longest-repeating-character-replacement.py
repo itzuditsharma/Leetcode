@@ -9,7 +9,7 @@ class Solution:
 
         while j < n:    
             hash_array[ord(s[j]) - ord('A')] += 1
-            maxfeq = max(maxfeq, hash_array[ord(s[j]) - ord('A')])
+            maxfeq = max(hash_array)
 
             while (j-i+1) - maxfeq > k:
                 hash_array[ord(s[i]) - ord('A')] -= 1
