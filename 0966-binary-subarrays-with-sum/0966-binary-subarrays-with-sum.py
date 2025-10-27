@@ -1,22 +1,16 @@
-class Solution(object):
-    def helper(self, nums, goal):
-        l = 0
-        r = 0
-        sum = 0
+class Solution:
+    def numSubarraysWithSum(self, nums: List[int], goal: int) -> int:
+        summ = 0
+        mapp = {}
+        mapp[0] = 1 
         count = 0
-        if goal < 0:
-            return 0
-        while r < len(nums):
-            sum += nums[r]
-            while(sum > goal):
-                sum -= nums[l]
-                l += 1
-            count += r-l+1
-            r+=1
+
+        for i in range(len(nums)):
+            summ += nums[i]
+            remain = summ - goal
+            if remain in mapp:
+                count += mapp[remain]
+            
+            mapp[summ] = mapp.get(summ, 0) + 1
         
         return count
-
-    def numSubarraysWithSum(self, nums, goal):
-        return self.helper(nums, goal) - self.helper(nums, goal - 1)
-        
-        
