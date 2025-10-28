@@ -1,18 +1,20 @@
 class Solution:
-    def numberOfSubarrays(self, nums: List[int], k: int) -> int:
-        nums = [num % 2 for num in nums]
-        # This now boils down to subarray with sum  = k 
-        mapp = {}
-        mapp[0] = 1
+    def helper(self, nums, k):
+        l = 0
+        r = 0
         summ = 0
-        count = 0
+        ans  = 0
 
-        for i in range(len(nums)):
-            summ += nums[i]
-            remain = summ - k
-            if remain in mapp:
-                count += mapp[remain]
-
-            mapp[summ] = mapp.get(summ, 0) + 1
+        while r < len(nums):
+            summ += nums[r] % 2
+            while summ > k:
+                summ -= nums[l] % 2
+                l += 1
+            ans += (r-l+1)
+            r+=1
         
-        return count
+        return ans
+
+
+    def numberOfSubarrays(self, nums: List[int], k: int) -> int:
+        return self.helper(nums, k) - self.helper(nums, k-1)
