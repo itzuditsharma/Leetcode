@@ -1,29 +1,26 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        int n = numCourses;
-        vector<int> indegree(n, 0);
-        vector<vector<int>> adj(n);
+        int n = numCourses; 
+        vector<int> indegree(n,0);
+        queue<int> q;
+        vector<int> topo;
+        vector<int> adj[n];
 
-        for(auto it : prerequisites){
+        for(auto it : prerequisites ){
             adj[it[1]].push_back(it[0]);
         }
 
         for(int i = 0; i < n; i++){
-            for(auto it : adj[i]){
-                indegree[it]++;
-            }
+            for(auto it : adj[i]) indegree[it]++;
         }
 
-        queue<int> q;
+        // queue<int> q;
         for(int i = 0; i < n; i++){
-            if(indegree[i] == 0){
-                q.push(i);
-            }
+            if(indegree[i] == 0) q.push(i);
         }
 
-        vector<int> topo;
-
+        // vector<int> topo;
         while(!q.empty()){
             int node = q.front();
             q.pop();
@@ -39,6 +36,6 @@ public:
         }
 
         if(topo.size() == n) return topo;
-        else return {};
+        return {};
     }
 };
