@@ -1,26 +1,18 @@
-class Solution(object):
-    def helper(self, n, nums, dp):
-        if n < 0:
+class Solution:
+    def helper(self,ind, nums, dp):
+        if ind < 0:
             return 0
-        if n == 0:
-            return nums[0]
-        if dp[n] != -1:
-            return dp[n]
-
-        pick = nums[n] + self.helper(n-2, nums, dp)
-        notPick = 0 + self.helper(n-1, nums, dp)
-
-        dp[n] = max(pick, notPick)
-        return dp[n]
-
-
-    def rob(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-
-        n = len(nums)
-        dp = [-1] * (n+1)
-        return self.helper(n-1, nums, dp)
         
+        if dp[ind] != -1:
+            return dp[ind]
+
+        take = nums[ind] + self.helper(ind - 2, nums, dp)
+        not_take = self.helper(ind - 1, nums, dp)
+        
+        dp[ind] = max(take, not_take)
+        return dp[ind]
+
+    def rob(self, nums: List[int]) -> int:
+        n = len(nums)
+        dp = [-1] * n
+        return self.helper(n-1, nums, dp)
