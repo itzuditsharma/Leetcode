@@ -2,7 +2,8 @@ class Solution:
     def helper(self,ind, nums, dp):
         if ind < 0:
             return 0
-        
+        if ind == 0:
+            return nums[0]
         if dp[ind] != -1:
             return dp[ind]
 
