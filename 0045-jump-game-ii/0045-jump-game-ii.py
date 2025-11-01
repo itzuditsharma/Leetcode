@@ -15,4 +15,4 @@ class Solution:
             jumps += 1
         
         return jumps
-
+        
