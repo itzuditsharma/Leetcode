@@ -1,17 +1,17 @@
 class Solution:
-    def helper(self,ind, nums, dp):
-        if ind < 0:
+    def helper(self, idx, nums, dp):
+        if idx < 0:
             return 0
-        if ind == 0:
-            return nums[0]
-        if dp[ind] != -1:
-            return dp[ind]
-
-        take = nums[ind] + self.helper(ind - 2, nums, dp)
-        not_take = self.helper(ind - 1, nums, dp)
+        if idx == 0:
+            return nums[idx]
+        if dp[idx] != -1:
+            return dp[idx]
         
-        dp[ind] = max(take, not_take)
-        return dp[ind]
+        take = nums[idx] + self.helper(idx - 2, nums, dp)
+        not_take = self.helper(idx - 1, nums, dp)
+        
+        dp[idx] = max(take, not_take)
+        return dp[idx]
 
     def rob(self, nums: List[int]) -> int:
         n = len(nums)
