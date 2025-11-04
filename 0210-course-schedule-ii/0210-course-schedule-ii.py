@@ -24,7 +24,6 @@ class Solution:
                 indegree[it] -= 1
                 if indegree[it] == 0:
                     q.append(it)
-        
         if len(topo) == numCourses:
             return topo
         else:
