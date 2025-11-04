@@ -20,7 +20,7 @@ class Solution:
                 temp.next = t2
                 temp = t2
                 t2 = t2.next
-            
+        
         if t1:
             temp.next = t1
         if t2:
