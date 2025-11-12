@@ -151,6 +151,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/itzuditsharma/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/itzuditsharma/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
+| [0768-partition-labels](https://github.com/itzuditsharma/Leetcode/tree/master/0768-partition-labels) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0966-binary-subarrays-with-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/itzuditsharma/Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
@@ -186,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0455-assign-cookies](https://github.com/itzuditsharma/Leetcode/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/itzuditsharma/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0768-partition-labels](https://github.com/itzuditsharma/Leetcode/tree/master/0768-partition-labels) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/itzuditsharma/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/itzuditsharma/Leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -345,6 +347,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0516-longest-palindromic-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0583-delete-operation-for-two-strings](https://github.com/itzuditsharma/Leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
+| [0768-partition-labels](https://github.com/itzuditsharma/Leetcode/tree/master/0768-partition-labels) |
 | [0812-rotate-string](https://github.com/itzuditsharma/Leetcode/tree/master/0812-rotate-string) |
 | [1078-remove-outermost-parentheses](https://github.com/itzuditsharma/Leetcode/tree/master/1078-remove-outermost-parentheses) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
@@ -534,6 +537,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/itzuditsharma/Leetcode/tree/master/0402-remove-k-digits) |
 | [0410-split-array-largest-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0410-split-array-largest-sum) |
 | [0455-assign-cookies](https://github.com/itzuditsharma/Leetcode/tree/master/0455-assign-cookies) |
+| [0768-partition-labels](https://github.com/itzuditsharma/Leetcode/tree/master/0768-partition-labels) |
 | [2032-largest-odd-number-in-string](https://github.com/itzuditsharma/Leetcode/tree/master/2032-largest-odd-number-in-string) |
 ## Sliding Window
 |  |
