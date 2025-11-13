@@ -6,11 +6,12 @@ class Solution:
         
         prev = -1
         ans = []
-        maxi = 0
+        max_range = -1e9
         for i in range(len(s)):
-            maxi = max(maxi, mapp[s[i]])
-            if i == maxi:
-                ans.append(maxi - prev)
-                prev = maxi
+            max_range = max(max_range, mapp[s[i]])
+
+            if i == max_range:
+                ans.append(i - prev)
+                prev = i
         
         return ans
