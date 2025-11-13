@@ -2,17 +2,19 @@ class Solution:
     def helper(self, ind, prev, nums, dp):
         if ind == len(nums):
             return 0
-
+        
         if dp[ind][prev + 1] != -1:
             return dp[ind][prev + 1]
-        
-        # not take 
-        len_ = self.helper(ind + 1, prev, nums, dp)
 
+        # not take case 
+        not_take = self.helper(ind + 1, prev, nums, dp)
+
+        # take case 
+        take = 0
         if prev == -1 or nums[prev] < nums[ind]:
-            len_ = max(len_, 1 + self.helper(ind + 1, ind, nums, dp))
+            take = 1 + self.helper(ind + 1, ind, nums, dp)
         
-        dp[ind][prev+1] = len_
+        dp[ind][prev+1] = max(take, not_take)
         return dp[ind][prev+1]
 
 
