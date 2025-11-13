@@ -3,35 +3,29 @@ class Solution:
         l = 0
         r = 0
         min_len = 1e9
+        hash_array = [0] * 256
         n = len(s)
         m = len(t)
         count = 0
-        hash = [0] * 256
         s_index = -1
-
         for i in range(m):
-            hash[ord(t[i])] +=1
-        
+            hash_array[ord(t[i])] += 1
+
         while r < n:
-            if hash[ord(s[r])] > 0:
+            if hash_array[ord(s[r])] > 0:
                 count += 1
-            hash[ord(s[r])] -= 1
+            hash_array[ord(s[r])] -= 1
 
             while count == m:
-                lenn = r-l+1
-                if min_len > lenn:
-                    min_len = lenn
+                if (r-l+1) < min_len:
+                    min_len = r-l+1
                     s_index = l
-                
-                hash[ord(s[l])] += 1
-                if hash[ord(s[l])] > 0:
+                hash_array[ord(s[l])] += 1
+                if hash_array[ord(s[l])] > 0:
                     count -= 1
                 l+=1
 
-            r+= 1
-        
+            r+=1
         if s_index == -1:
             return ""
         return s[s_index : s_index + min_len]
-
-
