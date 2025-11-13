@@ -7,14 +7,13 @@ class Solution:
             return dp[ind][prev + 1]
 
         # not take case 
-        not_take = self.helper(ind + 1, prev, nums, dp)
+        len_ = self.helper(ind + 1, prev, nums, dp)
 
         # take case 
-        take = 0
         if prev == -1 or nums[prev] < nums[ind]:
-            take = 1 + self.helper(ind + 1, ind, nums, dp)
+            len_ = max(len_, 1 + self.helper(ind + 1, ind, nums, dp))
         
-        dp[ind][prev+1] = max(take, not_take)
+        dp[ind][prev+1] = len_
         return dp[ind][prev+1]
 
 
