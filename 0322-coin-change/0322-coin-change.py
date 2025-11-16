@@ -20,4 +20,4 @@ class Solution:
         n = len(coins)
         dp = [[-1 for _ in range(amount + 1)] for _ in range(n)]
         ans = self.helper(n-1, coins, amount, dp)
-        return -1 if ans >= 1e9 else ans
+        return ans if ans< 1e9  else -1
