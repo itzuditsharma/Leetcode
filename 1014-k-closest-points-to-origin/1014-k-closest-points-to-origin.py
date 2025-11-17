@@ -4,8 +4,9 @@ class Solution:
         for point in points:
             first = point[0]
             second = point[1]
-            distance = (first**2 + second**2) * (0.5)
-            distances.append((point, distance))
+            dis = (first**2 + second**2) * 0.5
+            distances.append((dis, point))
 
-        distances.sort(key = lambda x : x[1])
-        return [first for first, second in distances[:k]]
+        distances.sort()
+        return [value for key, value in distances[:k]]
+        
