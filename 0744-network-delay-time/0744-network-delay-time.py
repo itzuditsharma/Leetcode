@@ -11,8 +11,8 @@ class Solution:
 
         while pq:
             cost, node = heapq.heappop(pq)
-            if cost > dist[node]:
-                continue
+            # if cost > dist[node]:
+            #     continue
             
             for adjNode, edw in adj[node]:
                 if dist[adjNode] > edw + cost:
