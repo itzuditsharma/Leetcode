@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0540-single-element-in-a-sorted-array](https://github.com/itzuditsharma/Leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0542-01-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/itzuditsharma/Leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [0658-find-k-closest-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0658-find-k-closest-elements) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/itzuditsharma/Leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/itzuditsharma/Leetcode/tree/master/0733-flood-fill) |
@@ -190,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0455-assign-cookies](https://github.com/itzuditsharma/Leetcode/tree/master/0455-assign-cookies) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/itzuditsharma/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0658-find-k-closest-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0658-find-k-closest-elements) |
 | [0768-partition-labels](https://github.com/itzuditsharma/Leetcode/tree/master/0768-partition-labels) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/itzuditsharma/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
@@ -285,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/itzuditsharma/Leetcode/tree/master/0368-largest-divisible-subset) |
 | [0451-sort-characters-by-frequency](https://github.com/itzuditsharma/Leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0455-assign-cookies](https://github.com/itzuditsharma/Leetcode/tree/master/0455-assign-cookies) |
+| [0658-find-k-closest-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0658-find-k-closest-elements) |
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
 | [0778-reorganize-string](https://github.com/itzuditsharma/Leetcode/tree/master/0778-reorganize-string) |
 | [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -511,6 +514,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0410-split-array-largest-sum) |
 | [0493-reverse-pairs](https://github.com/itzuditsharma/Leetcode/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/itzuditsharma/Leetcode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0658-find-k-closest-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0658-find-k-closest-elements) |
 | [0792-binary-search](https://github.com/itzuditsharma/Leetcode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/itzuditsharma/Leetcode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/itzuditsharma/Leetcode/tree/master/1023-time-based-key-value-store) |
@@ -559,6 +563,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/itzuditsharma/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/itzuditsharma/Leetcode/tree/master/0424-longest-repeating-character-replacement) |
+| [0658-find-k-closest-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0658-find-k-closest-elements) |
 | [0966-binary-subarrays-with-sum](https://github.com/itzuditsharma/Leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/itzuditsharma/Leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1046-max-consecutive-ones-iii](https://github.com/itzuditsharma/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
@@ -573,6 +578,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/itzuditsharma/Leetcode/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/itzuditsharma/Leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [0658-find-k-closest-elements](https://github.com/itzuditsharma/Leetcode/tree/master/0658-find-k-closest-elements) |
 | [0744-network-delay-time](https://github.com/itzuditsharma/Leetcode/tree/master/0744-network-delay-time) |
 | [0778-reorganize-string](https://github.com/itzuditsharma/Leetcode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/itzuditsharma/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
