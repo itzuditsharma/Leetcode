@@ -1,18 +1,17 @@
 class Solution:
-    def helper(self, i, n, nums, ans, ds):
-        if i == n:
-            ans.append(ds.copy())
-            return
+    def helper(self, ind, nums, n, ds, ans):
+        if ind == n:
+            ans.append(ds[:])
+            return 
         
-        ds.append(nums[i])
-        self.helper(i+1, n, nums, ans, ds)
+        ds.append(nums[ind])
+        self.helper(ind + 1, nums, n, ds, ans)
         ds.pop()
-        self.helper(i+1, n, nums, ans, ds)
+        self.helper(ind + 1, nums, n, ds, ans)
 
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        ans = []
         ds = []
+        ans = []
         n = len(nums)
-
-        self.helper(0, n, nums, ans, ds)
+        self.helper(0, nums, n, ds, ans)
         return ans
