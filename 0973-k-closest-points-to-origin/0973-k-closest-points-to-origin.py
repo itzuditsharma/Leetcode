@@ -8,4 +8,4 @@ class Solution:
             answers.append((dis, point))
 
         sorted_answers = sorted(answers, key = lambda x : x[0])
-        return [pairs for key, pairs in sorted_answers[0:k]]
+        return [point for dis, point in sorted_answers[0:k]]
