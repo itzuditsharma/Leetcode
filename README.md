@@ -104,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1073-number-of-enclaves](https://github.com/itzuditsharma/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/itzuditsharma/Leetcode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1331-rank-transform-of-an-array](https://github.com/itzuditsharma/Leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/itzuditsharma/Leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1370-count-number-of-nice-subarrays](https://github.com/itzuditsharma/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/itzuditsharma/Leetcode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1034-subarrays-with-k-different-integers](https://github.com/itzuditsharma/Leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
+| [1331-rank-transform-of-an-array](https://github.com/itzuditsharma/Leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1370-count-number-of-nice-subarrays](https://github.com/itzuditsharma/Leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/itzuditsharma/Leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 ## Two Pointers
@@ -294,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/itzuditsharma/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/itzuditsharma/Leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
+| [1331-rank-transform-of-an-array](https://github.com/itzuditsharma/Leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/itzuditsharma/Leetcode/tree/master/1669-minimum-cost-to-cut-a-stick) |
 ## Merge Sort
 |  |
