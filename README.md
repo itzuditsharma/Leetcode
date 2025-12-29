@@ -375,6 +375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/itzuditsharma/Leetcode/tree/master/0721-accounts-merge) |
 | [0768-partition-labels](https://github.com/itzuditsharma/Leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/itzuditsharma/Leetcode/tree/master/0778-reorganize-string) |
+| [0796-rotate-string](https://github.com/itzuditsharma/Leetcode/tree/master/0796-rotate-string) |
 | [0812-rotate-string](https://github.com/itzuditsharma/Leetcode/tree/master/0812-rotate-string) |
 | [1021-remove-outermost-parentheses](https://github.com/itzuditsharma/Leetcode/tree/master/1021-remove-outermost-parentheses) |
 | [1023-time-based-key-value-store](https://github.com/itzuditsharma/Leetcode/tree/master/1023-time-based-key-value-store) |
@@ -896,6 +897,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/itzuditsharma/Leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0796-rotate-string](https://github.com/itzuditsharma/Leetcode/tree/master/0796-rotate-string) |
 | [0812-rotate-string](https://github.com/itzuditsharma/Leetcode/tree/master/0812-rotate-string) |
 | [1764-maximum-repeating-substring](https://github.com/itzuditsharma/Leetcode/tree/master/1764-maximum-repeating-substring) |
 ## Trie
