@@ -3,25 +3,21 @@ class Solution:
         mapp1 = {}
         mapp2 = {}
 
-        n = len(s)
-        m = len(t)
+        i = j = 0
 
-        if n != m:
+        if len(s) != len(t):
             return False
 
-        i = 0
-        j = 0
-
-        while i < n and j < m:
+        while i < len(s) and j < len(t):
             if s[i] in mapp1 and mapp1[s[i]] != t[j]:
                 return False
             if t[j] in mapp2 and mapp2[t[j]] != s[i]:
                 return False
-
+            
             mapp1[s[i]] = t[j]
             mapp2[t[j]] = s[i]
 
-            i += 1
-            j += 1
+            i+=1
+            j+=1
         
         return True
