@@ -248,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/itzuditsharma/Leetcode/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/itzuditsharma/Leetcode/tree/master/0735-asteroid-collision) |
 | [0937-online-stock-span](https://github.com/itzuditsharma/Leetcode/tree/master/0937-online-stock-span) |
+| [1021-remove-outermost-parentheses](https://github.com/itzuditsharma/Leetcode/tree/master/1021-remove-outermost-parentheses) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/itzuditsharma/Leetcode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1078-remove-outermost-parentheses](https://github.com/itzuditsharma/Leetcode/tree/master/1078-remove-outermost-parentheses) |
 | [1737-maximum-nesting-depth-of-the-parentheses](https://github.com/itzuditsharma/Leetcode/tree/master/1737-maximum-nesting-depth-of-the-parentheses) |
@@ -375,6 +376,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/itzuditsharma/Leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/itzuditsharma/Leetcode/tree/master/0778-reorganize-string) |
 | [0812-rotate-string](https://github.com/itzuditsharma/Leetcode/tree/master/0812-rotate-string) |
+| [1021-remove-outermost-parentheses](https://github.com/itzuditsharma/Leetcode/tree/master/1021-remove-outermost-parentheses) |
 | [1023-time-based-key-value-store](https://github.com/itzuditsharma/Leetcode/tree/master/1023-time-based-key-value-store) |
 | [1078-remove-outermost-parentheses](https://github.com/itzuditsharma/Leetcode/tree/master/1078-remove-outermost-parentheses) |
 | [1129-longest-string-chain](https://github.com/itzuditsharma/Leetcode/tree/master/1129-longest-string-chain) |
