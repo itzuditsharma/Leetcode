@@ -10,8 +10,8 @@ class Solution:
 
         while temp:
             nextNode = temp.next
-            temp.next = prev
+            temp.next = prev 
             prev = temp
             temp = nextNode
-
+        
         return prev
