@@ -8,14 +8,11 @@ class Solution:
             i+=1
         if i == n:
             return 0
-        s = s[i:]
         sign = 1
-        if s[0] == '-':
+        if s[i] == '-':
             sign = -1
-        if s[0] == '-' or s[0] == '+':
-            i = 1
-        else:
-            i = 0
+        if s[i] == '-' or s[i] == '+':
+            i = i + 1
         num = 0
         while i < len(s):
             if s[i].isdigit() == False:
