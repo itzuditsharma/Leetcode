@@ -3,13 +3,13 @@ class Solution:
         if len(s) != len(t):
             return False
         
-        mapp = {}
-        for x in s:
-            mapp[x] = mapp.get(x, 0) + 1
+        mapp = defaultdict(int)
 
-        for val in t:
-            if val not in mapp or mapp[val] == 0:
-                return False
-            mapp[val] -= 1
+        for i in range(len(s)):
+            mapp[s[i]] += 1
         
+        for i in range(len(t)):
+            if t[i] not in mapp or mapp[t[i]] == 0:
+                return False
+            mapp[t[i]] -= 1
         return True
