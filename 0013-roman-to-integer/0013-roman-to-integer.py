@@ -13,7 +13,7 @@ class Solution:
         summ = 0
         n = len(s)
         for i in range(n):
-            if i + 1 < n and mapp[s[i]] < mapp[s[i+1]]:
+            if i+1 < n and mapp[s[i]] < mapp[s[i+1]]:
                 summ -= mapp[s[i]]
             else:
                 summ += mapp[s[i]]
