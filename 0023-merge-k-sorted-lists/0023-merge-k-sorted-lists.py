@@ -8,18 +8,16 @@ class Solution:
         heap = []
         for i in range(len(lists)):
             if lists[i]:
-                heapq.heappush(heap, (lists[i].val,i, lists[i]))
-
-        heapq.heapify(heap)
-        temp_node = ListNode(-1)
-        temp = temp_node
+                heapq.heappush(heap, (lists[i].val, i, lists[i]))
+                
+        dummyNode = ListNode(-1)
+        temp = dummyNode
 
         while heap:
-            elem, i, node = heapq.heappop(heap)
+            elem, list_idx, node = heapq.heappop(heap)
             temp.next = node
             temp = temp.next
-
-            if node.next:
-                heapq.heappush(heap, (node.next.val, i, node.next))
+            if node.next != None:
+                heapq.heappush(heap, (node.next.val, list_idx, node.next))
         
-        return temp_node.next
+        return dummyNode.next
