@@ -3,7 +3,8 @@ class Solution:
         sett = set(wordList)
         q = deque()
         q.append((beginWord, 1))
-        sett.discard(beginWord)
+        sett.discard(beginWord)   
+        # sett.remove(beginWord) #leads to an error if element not present in set   
 
         while q:
             word, steps = q.popleft()
