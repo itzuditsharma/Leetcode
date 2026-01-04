@@ -8,21 +8,21 @@ class Solution:
             nrow = row + drow[i]
             ncol = col + dcol[i]
 
-            if nrow >= 0 and nrow < n and ncol >= 0 and ncol < m and vis[nrow][ncol] == 0 and grid[nrow][ncol] == '1':
+            if nrow >=0 and nrow < n and ncol >= 0 and ncol < m and vis[nrow][ncol] == 0 and grid[nrow][ncol] == "1":
                 self.dfs(nrow, ncol, grid, vis, drow, dcol)
 
     def numIslands(self, grid: List[List[str]]) -> int:
         n = len(grid)
         m = len(grid[0])
-        count = 0
-        visited = [[0 for _ in range(m)] for _ in range(n)]
+        vis = [[0] * m for _ in range(n)]
         drow = [-1, 0, 1, 0]
         dcol = [0, 1, 0, -1]
+        count = 0
 
         for i in range(n):
             for j in range(m):
-                if grid[i][j] == '1' and visited[i][j] == 0:
+                if vis[i][j] == 0 and grid[i][j] == "1":
                     count += 1
-                    self.dfs(i, j, grid, visited, drow, dcol)
+                    self.dfs(i, j, grid, vis, drow, dcol)
         
         return count
