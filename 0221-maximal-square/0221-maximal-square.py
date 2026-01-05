@@ -1,29 +1,30 @@
 class Solution:
-    def helper(self, row, col, dp, matrix):
-        if row < 0 or col < 0:
+    def helper(self, i, j, matrix, dp):
+        # out of bounds
+        if i < 0 or j < 0:
             return 0
-        
-        if dp[row][col] != -1:
-            return dp[row][col]
-        
-        left = self.helper(row, col - 1, dp, matrix)
-        diagonal_left = self.helper(row-1, col-1, dp, matrix)
-        top = self.helper(row-1, col, dp, matrix)
 
-        if matrix[row][col] == "1":
-            dp[row][col]  = 1 + min(left, min(diagonal_left, top))
-            self.maxi = max(self.maxi, dp[row][col])
+        if dp[i][j] != -1:
+            return dp[i][j]
+
+        left = self.helper(i, j - 1, matrix, dp)
+        top = self.helper(i - 1, j, matrix, dp)
+        diag = self.helper(i - 1, j - 1, matrix, dp)
+
+        if matrix[i][j] == "1":
+            dp[i][j] = 1 + min(left, top, diag)
+            self.maxi = max(self.maxi, dp[i][j])
         else:
-            dp[row][col] = 0
-        
-        return dp[row][col]
+            dp[i][j] = 0
 
-    def maximalSquare(self, matrix: List[List[str]]) -> int:
-        self.maxi = 0
-        n = len(matrix)
-        m = len(matrix[0])
+        return dp[i][j]
+
+    def maximalSquare(self, matrix):
+        n, m = len(matrix), len(matrix[0])
         dp = [[-1] * m for _ in range(n)]
-        for i in range(n):
-            for j in range(m):
-                self.helper(i, j, dp, matrix)
-        return self.maxi*self.maxi
+        self.maxi = 0
+
+        # single recursive call
+        self.helper(n - 1, m - 1, matrix, dp)
+
+        return self.maxi * self.maxi
