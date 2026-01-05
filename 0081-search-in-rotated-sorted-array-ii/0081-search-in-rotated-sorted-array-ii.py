@@ -8,12 +8,12 @@ class Solution:
             mid = (low + high) // 2
             if nums[mid] == target:
                 return True
-
-            if nums[low] == nums[mid] and nums[mid] == nums[high]:
+            
+            if nums[low] == nums[mid] == nums[high]:
                 low += 1
                 high -= 1
                 continue
-
+            
             if nums[mid] <= nums[high]:
                 if nums[mid] <= target and target <= nums[high]:
                     low = mid + 1
@@ -24,5 +24,5 @@ class Solution:
                     high = mid - 1
                 else:
                     low = mid + 1
-        
+                    
         return False
