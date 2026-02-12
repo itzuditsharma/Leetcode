@@ -6,5 +6,3 @@ class Solution:
         nums[:k] = nums[:k][::-1]
         nums[k:] = nums[k:][::-1]
         
-        
-
