@@ -1,18 +1,17 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        mapp = {}
-        sum = 0
+        mapp = defaultdict(int)
+        summ = 0
         mapp[0] = 1
-        total = 0
+        ans = 0
 
-        for val in nums:
-            sum += val
+        for i in range(len(nums)):
+            summ += nums[i]
 
-            remain = sum - k
-
+            remain = summ - k
             if remain in mapp:
-                total += mapp[remain]
+                ans += mapp[remain]
             
-            mapp[sum] = mapp.get(sum, 0) + 1
+            mapp[summ] += 1
         
-        return total
+        return ans
