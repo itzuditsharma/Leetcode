@@ -2,20 +2,19 @@ class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
         n = len(matrix)
         m = len(matrix[0])
-
-        rows = [0] * n
-        cols = [0] * m
+        
+        row = [0] * n
+        col = [0] * m
 
         for i in range(n):
             for j in range(m):
                 if matrix[i][j] == 0:
-                    rows[i] = 1
-                    cols[j] = 1
-
+                    row[i] = 1
+                    col[j] = 1
+        
         for i in range(n):
             for j in range(m):
-                if rows[i] == 1 or cols[j] == 1:
+                if row[i] == 1 or col[j] == 1:
                     matrix[i][j] = 0
-        
+
         return matrix
-        
