@@ -29,12 +29,13 @@ class Solution:
                 count1 += 1
             if nums[i] == element2:
                 count2 += 1
+        
+        mini = (n//3) + 1
 
         ans = []
-        mini = (n//3) + 1
         if count1 >= mini:
             ans.append(element1)
         if count2 >= mini:
             ans.append(element2)
-        
+
         return sorted(ans)
