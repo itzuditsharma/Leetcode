@@ -7,14 +7,15 @@ class Solution:
             if nums1[left] > nums2[right]:
                 nums1[left], nums2[right] = nums2[right], nums1[left]
                 left -= 1
-                right +=1
+                right += 1
             else:
                 break
         
-        nums1[0:m] = sorted(nums1[:m])
+        nums1[:m] = sorted(nums1[:m])
         nums2 = sorted(nums2)
 
         for i in range(m, m+n):
             nums1[i] = nums2[i-m]
         
         return nums1
+        
