@@ -17,7 +17,7 @@ class Solution:
         dcol = [0, 1, 0, -1]
 
         while q:
-            (row, col), t = q.pop()
+            (row, col), t = q.popleft()
             time = max(time, t)
 
             for i in range(4):
