@@ -1,27 +1,26 @@
 class Solution:
-    def dfs(self, i, vis, adjls):
-        vis[i] = 1
+    def dfs(self, node, vis, adj):
+        vis[node] = 1
 
-        for it in adjls[i]:
+        for it in adj[node]:
             if vis[it] == 0:
-                self.dfs(it, vis, adjls)
+                self.dfs(it, vis, adj)
 
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
         n = len(isConnected)
         vis = [0] * n
-
-        adjls = [[] for _ in range(n)]
-
+        adj = [[] for _ in range(n)]
+        
         for i in range(n):
             for j in range(n):
                 if isConnected[i][j] == 1 and i != j:
-                    adjls[i].append(j)
-                    adjls[j].append(i)
-        
-        provinces = 0
+                    adj[i].append(j)
+                    adj[j].append(i)
+
+        count = 0
         for i in range(n):
             if vis[i] == 0:
-                self.dfs(i, vis, adjls)
-                provinces += 1
+                self.dfs(i, vis, adj)
+                count += 1
         
-        return provinces
+        return count
